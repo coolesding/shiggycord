@@ -1,0 +1,16 @@
+:root {
+  --sc-version: "1.0.0";
+  }
+.theme-dark .container-YkUktl:before {
+  content: "shiggycord";
+  color: var(--main-color);
+  font-size: 12px;
+  right: 67%;
+  bottom: -13%;
+}
+.theme-dark .container-YkUktl:after {
+    content: var(--sc-version);
+    color: var(--hover-color);
+    left: 82%;
+    font-size: 14px;
+}
