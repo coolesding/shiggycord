@@ -1,8 +1,4 @@
-:root {
-    --rs-version: "2.0.9";
-  }
-  
-  #app-mount .wrapper-3Un6-K {
+#app-mount .wrapper-3Un6-K {
     border-radius: var(--rs-avatar-shape);
   }
   #app-mount .wrapper-3Un6-K svg:not(:root) {
@@ -233,8 +229,4 @@
   #app-mount .userInfo-2WpsYG .wrapper-3Un6-K {
     margin-top: 1px;
     margin-left: 1px;
-  }
-  #app-mount .info-3pQQBb .line-18uChy:last-child:after {
-    content: "RadialStatus " var(--rs-version);
-    display: block;
   }
