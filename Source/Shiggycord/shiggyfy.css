@@ -4,8 +4,6 @@
   height: 4px !important;
 }
 .barFill-3RgCsY {
-  background: url("https://cdn.discordapp.com/attachments/860592935203766292/1123990857545166978/M7zWsoi.png") !important;
-  background-size: cover !important;
   display: none;
 }
 #vc-spotify-progress-bar > div.sliderContainer-3vLXjN > div > div:nth-child(3) > div {
@@ -24,4 +22,26 @@
   left: -4px;
   top: -13px;
   transform: scaleX(-1);
+}
+#vc-spotify-progress-bar:before {
+    content: "";
+    position: absolute;
+    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1123998596514197515/c19Wayw.png);
+    background-size: contain;
+    height: 20px;
+    width: 12.8px;
+    bottom: 17px;
+    left: -5px;
+    display: block;
+}
+#vc-spotify-progress-bar:after {
+    content: "";
+    position: absolute;
+    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1124000386567647303/IXwpwda.png);
+    background-size: contain;
+    height: 20px;
+    width: 12.8px;
+    bottom: 17px;
+    left: 195px;
+    display: block;
 }
