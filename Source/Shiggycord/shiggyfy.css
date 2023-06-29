@@ -25,23 +25,3 @@
   top: -13px;
   transform: scaleX(-1);
 }
-#vc-spotify-titles:before {
-    content: "";
-    position: absolute;
-    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1123998596514197515/c19Wayw.png);
-    background-size: contain;
-    height: 20px;
-    width: 12.8px;
-    left: 0px;
-    bottom: 108px; 
-}
-#vc-spotify-titles:after {
-    content: "";
-    position: absolute;
-    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1124000386567647303/IXwpwda.png);
-    background-size: contain;
-    height: 20px;
-    width: 12.8px;
-    left: 204px;
-    bottom: 108px;
-}
