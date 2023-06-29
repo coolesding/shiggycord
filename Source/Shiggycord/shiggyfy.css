@@ -8,10 +8,11 @@
   background-size: cover !important;
   display: none;
 }
-#vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
+#vc-spotify-progress-bar > div.sliderContainer-3vLXjN > div > div:nth-child(3) > div {
   border: none;
-  background: none !important;
-  box-shadow: none;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none; 
+  }
 }
 .grabber-3R-Rx9:after {
   content: "";
