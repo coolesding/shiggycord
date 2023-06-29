@@ -17,11 +17,12 @@
   content: "";
   background: url("https://cdn.discordapp.com/attachments/860592935203766292/1123987529331392574/ZJVWifs.png");
   background-size: contain;
-  width: 16px !important;
-  height: 16px !important;
+  background-repeat: no-repeat;
+  width: 18px !important;
+  height: 18px !important;
   position: absolute;
   left: -4px;
-  top: -11px;
+  top: -13px;
   transform: scaleX(-1);
 }
 #vc-spotify-titles:before {
