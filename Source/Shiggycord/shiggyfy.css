@@ -10,8 +10,7 @@
 }
 #vc-spotify-progress-bar>[class^=slider] [class^=grabber] {
   box-shadow: none;
-  background-color: rgba(0,0,0,0) ;
-
+  background-color: rgba(0,0,0,0);
 }
 .grabber-3R-Rx9:after {
   content: "";
@@ -23,7 +22,7 @@
   left: -4px;
   top: -11px;
   transform: scaleX(-1);
-  }
+}
 #vc-spotify-titles:before {
     content: "";
     position: absolute;

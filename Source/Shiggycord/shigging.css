@@ -1,0 +1,23 @@
+.newMemberBadge-3PdStX,[src="https://cdn.discordapp.com/role-icons/1017150273946394746/1794c29523f79413c79d45194b664810.webp?size=28&quality=lossless"]  {
+    content: url(https://cdn.discordapp.com/emojis/1093803211783143504.gif?size=160&quality=lossless);
+}
+.channelTextArea-1VQBuV:before {
+    content: url("https://cdn.discordapp.com/attachments/860592935203766292/1123746112830976000/6HkPRyq.png");
+    position: absolute;
+    top: -8px;
+    right: -36px;
+    display: block;
+}
+body:after {
+    content: url("https://cdn.discordapp.com/attachments/860592935203766292/1123746279856545792/Y50BiFc.png");
+    position: absolute;
+    bottom: 20.7px;
+    left: 252px;
+    display: block;
+}
+.channelTextArea-1VQBuV {
+    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1123744277466456124/xsvIERi.png);
+    border-radius: 0px;
+    background-position-y: 100%;
+    background-repeat: repeat-x;
+}
