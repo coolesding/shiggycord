@@ -8,6 +8,15 @@
     right: -36px;
     display: block;
 }
+.chat-2ZfjoI:after {
+    content: url("https://cdn.discordapp.com/attachments/860592935203766292/1123746279856545792/Y50BiFc.png");
+    bottom: 22px;
+    left: -40px;
+    position: absolute;
+}
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI {
+  overflow: visible;
+}
 #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div {
     background: url(https://cdn.discordapp.com/attachments/860592935203766292/1123744277466456124/xsvIERi.png);
     border-radius: 0px;
