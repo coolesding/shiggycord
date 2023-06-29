@@ -15,9 +15,10 @@ body:after {
     left: 252px;
     display: block;
 }
-.channelTextArea-1VQBuV {
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div {
     background: url(https://cdn.discordapp.com/attachments/860592935203766292/1123744277466456124/xsvIERi.png);
     border-radius: 0px;
+    box-shadow: none;
     background-position-y: 100%;
     background-repeat: repeat-x;
 }
