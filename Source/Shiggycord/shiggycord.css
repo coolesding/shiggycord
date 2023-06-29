@@ -1,6 +1,13 @@
 :root {
   --sc-version: "1.0.0";
 }
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/colliggy.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/shiggyfy.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/shigging.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/radialstatus.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/winbar.css);
+
+
 .theme-dark .container-YkUktl:before {
   content: "shiggycord";
   color: var(--main-color);
