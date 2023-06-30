@@ -30,5 +30,5 @@
   display: none;
 }
 #app-mount .baseLayer-W6S8cY, #app-mount .layer-86YKbF.stop-animations:first-child::after {
-	opacity: 0.8 !important;
+	opacity: 1 !important;
 }
