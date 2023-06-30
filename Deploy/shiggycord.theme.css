@@ -98,4 +98,7 @@
   --rs-streaming-color: #643da7;
   --rs-phone-visible: block;
   --bg-overlay-1: ; /* dont ask why this is important */
+  --settingsmodalbackground: 	transparent;			/* default:	transparent		(lowest bg color of changed windows, change it in case another theme turns them transparent)	*/
+  --settingsmodalwidth:         80vw;					/* default:	960px			(width of the settings modal, px/vw)															*/
+  --settingsmodalheight: 		90vh;					/* default:	80vh*/		
 }
