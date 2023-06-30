@@ -27,3 +27,13 @@
 #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div.typing-2J1mQU.base-3bcbY3 {
   background: none;
 }
+#popout_3889 > div > div > div > div > div.iconContainer-11h7fa:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  display: block;
+  left: 7px;
+  top: 10px;
+  background: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=160&quality=lossless);
+}
