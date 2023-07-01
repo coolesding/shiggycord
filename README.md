@@ -1,2 +1,2 @@
-# shiggycord
-please be final attempt
+# Offcial Shiggycord Theme
+More Information in here soon...
