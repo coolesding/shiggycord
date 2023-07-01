@@ -1,10 +1,9 @@
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/colliggy.css);
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/shiggyfy.css);
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/shigging.css);
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/radialstatus.css);
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/winbar.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Shiggycord/colliggy.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Shiggycord/shiggyfy.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Shiggycord/shigging.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Addons/radialstatus.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Addons/winbar.css);
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 
 :root {
   --sc-version: "1.0.0";
