@@ -3,7 +3,8 @@
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Shiggycord/shigging.css);
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Addons/radialstatus.css);
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Addons/winbar.css);
-@import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");
+@import url(https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/dev/Source/Addons/settingsmodal.css);
 
 :root {
   --sc-version: "1.0.0";
