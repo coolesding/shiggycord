@@ -1,2 +1,3 @@
-# Offcial Shiggycord Theme
-More Information in here soon...
+# Offcial Shiggycord Theme Development branch
+NEVER USE THIS UNLESS I EXPLICITLY TELL YOU TO
+USE MAIN BRANCH
