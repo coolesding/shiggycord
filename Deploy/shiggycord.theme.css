@@ -13,11 +13,11 @@
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/shiggycord.css);
 
 :root {
-  --main-color: #778A0F;
-  --hover-color: #444F0A;
-  --success-color: #C7CE71;
-  --danger-color: #9A1E52;
-  --url-color: var(--main-color);
+  --main-colour: #778A0F;
+  --hover-colour: #444F0A;
+  --success-colour: #C7CE71;
+  --danger-colour: #9A1E52;
+  --url-colour: var(--main-colour);
   --background-image: url(https://cdn.discordapp.com/attachments/860592935203766292/1123242644269699112/kEaVjPj.jpg);
   --background-shading: 40%;
   --background-position: center;
@@ -56,14 +56,14 @@
   --home-icon: url(https://cdn.discordapp.com/attachments/860592935203766292/1123232266840182895/32LC1BvzhRyg0vkt.png);
   --home-position: center;
   --home-size: 40px;
-  --channel-unread: var(--main-color);
-  --channel-color: rgba(255,255,255,0.3);
-  --muted-color: rgba(255,255,255,0.1);
-  --online-color: #43b581;
-  --idle-color: #faa61a;
-  --dnd-color: #982929;
-  --streaming-color: #593695;
-  --offline-color: #808080;
+  --channel-unread: var(--main-colour);
+  --channel-colour: rgba(255,255,255,0.3);
+  --muted-colour: rgba(255,255,255,0.1);
+  --online-colour: #43b581;
+  --idle-colour: #faa61a;
+  --dnd-colour: #982929;
+  --streaming-colour: #593695;
+  --offline-colour: #808080;
   --main-font: gg sans;
   --code-font: Consolas;
   --channels-width: 220px;
@@ -81,9 +81,9 @@
   --backdrop-grayscale: var(--background-grayscale);
   --backdrop-sepia: var(--background-sepia);
   --backdrop-blur: var(--background-blur);
-  --bd-blue: var(--main-color);
-  --bd-blue-hover: var(--hover-color);
-  --bd-blue-active: var(--hover-color);
+  --bd-blue: var(--main-colour);
+  --bd-blue-hover: var(--hover-colour);
+  --bd-blue-active: var(--hover-colour);
   --rs-small-spacing: 2px;
   --rs-medium-spacing: 3px;
   --rs-large-spacing: 4px;
@@ -91,11 +91,11 @@
   --rs-medium-width: 3px;
   --rs-large-width: 4px;
   --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
+  --rs-online-colour: #43b581;
+  --rs-idle-colour: #faa61a;
+  --rs-dnd-colour: #f04747;
+  --rs-offline-colour: #636b75;
+  --rs-streaming-colour: #643da7;
   --rs-phone-visible: block;
   --bg-overlay-1: ; /* dont ask why this is important */
   --settingsmodalbackground: 	rgba(0,0,0,0.6);	/*Settings Background, RGBA value recommended*/

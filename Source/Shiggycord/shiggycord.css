@@ -8,17 +8,29 @@
 
 :root {
   --sc-version: "1.0.1";
+  --main-color: var(--main-colour);
+  --hover-color: var(--hover-colour);
+  --success-color: var(--success-colour);
+  --danger-color: var(--danger-colour);
+  --url-color: var(--main-color);
+  --channel-color: var(--channel-colour);
+  --muted-color: var(--muted-colour);
+  --online-color: var(--online-colour);
+  --idle-color: var(--idle-colour);
+  --dnd-color: var(--dnd-colour);
+  --streaming-color: var(--streaming-colour);
+  --offline-color: var(--offline-colour);
 }
 .theme-dark .container-YkUktl:before {
   content: "shiggycord";
-  color: var(--main-color);
+  color: var(--main-colour);
   font-size: 12px;
   right: 50%;
   bottom: -5%;
 }
 .theme-dark .container-YkUktl:after {
     content: var(--sc-version);
-    color: var(--hover-color);
+    color: var(--hover-colour);
     left: 60%;
     font-size: 14px;
 }
