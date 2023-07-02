@@ -6,6 +6,10 @@
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/settingsmodal.css);
 
+:root {
+  --sc-version: "1.0.1";
+}
+
 .theme-dark .container-YkUktl:before {
   content: "shiggycord";
   color: var(--main-color);
