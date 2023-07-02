@@ -6,31 +6,16 @@
 @import url("https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css");
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/settingsmodal.css);
 
-:root {
-  --sc-version: "1.0.1";
-  --main-color: var(--main-colour);
-  --hover-color: var(--hover-colour);
-  --success-color: var(--success-colour);
-  --danger-color: var(--danger-colour);
-  --url-color: var(--main-color);
-  --channel-color: var(--channel-colour);
-  --muted-color: var(--muted-colour);
-  --online-color: var(--online-colour);
-  --idle-color: var(--idle-colour);
-  --dnd-color: var(--dnd-colour);
-  --streaming-color: var(--streaming-colour);
-  --offline-color: var(--offline-colour);
-}
 .theme-dark .container-YkUktl:before {
   content: "shiggycord";
-  color: var(--main-colour);
+  color: var(--main-color);
   font-size: 12px;
   right: 50%;
   bottom: -5%;
 }
 .theme-dark .container-YkUktl:after {
     content: var(--sc-version);
-    color: var(--hover-colour);
+    color: var(--hover-color);
     left: 60%;
     font-size: 14px;
 }
