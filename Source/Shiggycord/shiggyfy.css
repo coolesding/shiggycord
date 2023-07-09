@@ -45,3 +45,6 @@
     left: 195px;
     display: block;
 }
+:root {
+  --bg-overlay-1: ; /*Shiggyfy background transparency*/
+}

@@ -97,7 +97,6 @@
   --rs-offline-color: #636b75;
   --rs-streaming-color: #643da7;
   --rs-phone-visible: block;
-  --bg-overlay-1: ; /* dont ask why this is important */
   --settingsmodalbackground: 	rgba(0,0,0,0.6);	/*Settings Background, RGBA value recommended*/
   --settingsmodalwidth: 90vw;	/* default:	90vw*/
   --settingsmodalheight: 90vh; /* default:	90vh*/		
