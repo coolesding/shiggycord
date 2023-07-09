@@ -7,7 +7,7 @@
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Addons/settingsmodal.css);
 
 :root {
-  --sc-version: "1.0.1";
+  --sc-version: "1.1.1";
 }
 
 .theme-dark .container-YkUktl:before {
@@ -18,15 +18,21 @@
   bottom: -5%;
 }
 .theme-dark .container-YkUktl:after {
-    content: var(--sc-version);
-    color: var(--hover-color);
-    left: 60%;
-    font-size: 14px;
+  content: var(--sc-version);
+  color: var(--hover-color);
+  left: 60%;
+  font-size: 14px;
 }
 #app-mount .info-3pQQBb .text-xs-normal-3O7EaX.line-18uChy:first-child:before {
-    content: "Shiggycord " var(--sc-version);
-    display: block;
+  content: "Shiggycord " var(--sc-version);
+  display: block;
 }
-#popout_3889 > div > div > div > div > div.iconContainer-11h7fa > svg, .buttons-uaqb-5 > .button-ejjZWC:first-child, #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div > nav > div.scroller-WSmht3.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > ul > li:nth-child(3), #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > nav > ul > div.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4 > div:nth-child(2) ,#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > nav > ul > div.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4 > div:nth-child(6) > div.listItemWrapper-3d87LP, [mask="url(#62972d41-0c73-4c89-ac45-101880b12e52)"], [aria-label="Explore Discoverable Servers"], [aria-label="Threads"], [aria-label="Notification Settings"], [aria-label="New Group DM"], .recentsIcon-F3eO1o {
+.buttons-uaqb-5 > .button-ejjZWC:first-child, #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div > nav > div.scroller-WSmht3.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > ul > li:nth-child(3),/*Nitro Button in Direct Messages*/
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > nav > ul > div.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4 > div:nth-child(5),/*Discover Servers*/
+[mask="url(#62972d41-0c73-4c89-ac45-101880b12e52)"]/*ay i dont even know someone figure this one out please*/,
+[aria-label="Threads"],/*Open Thread Icon in Toolbar */
+[aria-label="Notification Settings"] /*Notification Settings Icon in Toolbar*/, 
+[aria-label="New Group DM"]/*New Group DM in Friends Menu */, 
+.recentsIcon-F3eO1o /*Unread Inbox */{
   display: none;
 }
