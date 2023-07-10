@@ -6,15 +6,21 @@
 #app-mount .layer-86YKbF ~ .layer-86YKbF {
 	position: absolute;
 	top: 0;
-	background: var(--settingsmodalbackground) ;
 	border-radius: 10px;
-	width: var(--settingsmodalwidth);
-	height: var(--settingsmodalheight);
+	width: var(--settingswidth);
+	height: var(--settingsheight);
 	margin: auto;
 	padding: 0;
-  z-index: 10;
+  	z-index: 10;
 }
-
+#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div:nth-child(2):after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: var(--settingsbackground);
+	filter: brightness(var(--settingsbrightness));
+  }
 #app-mount .layer-86YKbF ~ .layer-86YKbF > div,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j {
 	position: absolute;
@@ -44,7 +50,7 @@
 	z-index: -1;
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
-	max-width: calc(var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize));
+	max-width: calc(var(--settingswidth) - 332px - var(--settingsiconsadditionalsize));
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm {
 	gap: 30px;
@@ -52,20 +58,20 @@
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .sectionsContainer-3BlPu4,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .editor-328F1U,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f {
-	min-width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
-	max-width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	min-width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	max-width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .sectionsContainer-3BlPu4,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .editor-328F1U,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f {
-	min-width: calc((var(--settingsmodalwidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
-	max-width: calc((var(--settingsmodalwidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
+	min-width: calc((var(--settingswidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
+	max-width: calc((var(--settingswidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutOuter-1OHwPL {
-	width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f .userPopoutOuter-1OHwPL {
-	width: calc((var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutOuter-1OHwPL,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f .userPopoutOuter-1OHwPL {
@@ -77,30 +83,10 @@
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .settingsContainer-36qZZ9,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .guildsSection-30CJxX {
-	max-width: calc(var(--settingsmodalwidth) - 332px - var(--settingsiconsadditionalsize));
+	max-width: calc(var(--settingswidth) - 332px - var(--settingsiconsadditionalsize));
 }
 
-#app-mount .root-2zfUH6 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: var(--settingsmodalbackground);
-	border-radius: 5px;
-	box-shadow: var(--elevation-high);
-	width: var(--settingsmodalwidth);
-	height: var(--settingsmodalheight);
-	margin: auto;
-	padding: 0;
-	overflow: hidden;
-	contain: unset;
-	z-index: 1000;
-}
-#app-mount .root-2zfUH6.enterDone-menWZ8 {
-	transform: unset;
-}
-#app-mount .perksModal-CLcR1c {
+#app-mount .perks-CLcR1c {
 	position: static;
 	border-radius: unset;
 	width: 100%;
@@ -108,39 +94,11 @@
 	margin: unset;
 	padding: unset;
 }
-#app-mount .perksModal-CLcR1c::before {
-	width: var(--settingsmodalwidth);
-	height: var(--settingsmodalheight);
+#app-mount .perks-CLcR1c::before {
+	width: var(--settingswidth);
+	height: var(--settingsheight);
 	margin: auto;
 }
-#app-mount .perksModalContentWrapper-3RHugb {
+#app-mount .perksContentWrapper-3RHugb {
 	padding: 10px 0 10px;
-}
-#app-mount .root-2zfUH6 .perksModal-CLcR1c .carousel-3dvee9 {
-	margin-left: calc(-0.5 * (100vw - var(--settingsmodalwidth)));
-}
-#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1-,
-#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1- .container-O54IuJ,
-#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1- .closeButton-PCZcma {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: transparent;
-	border: none;
-	border-radius: 0;
-	width: 100%;
-	max-width: unset;
-	height: 100%;
-	max-height: unset;
-	margin: 0;
-	padding: 0;
-	opacity: 0;
-	cursor: default;
-}
-#app-mount .root-2zfUH6 .closeIconWrapper-1W_w1- {
-	position: fixed;
-	top: 22px;
-	z-index: -1;
 }
