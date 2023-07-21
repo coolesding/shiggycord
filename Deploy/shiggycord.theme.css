@@ -2,7 +2,7 @@
  * @name Shiggycord
  * @author Coolesding
  * @authorId 406084422308331522
- * @version 1.1.2
+ * @version 1.1.3
  * @description Kemomimichan Theme based on Clearvision v6 (https://github.com/ClearVision/ClearVision-v6)
  * @website https://discord.gg/cPQHsZZBw5
  * @source https://github.com/xdCoolesding/shiggycord
@@ -31,7 +31,7 @@
   --background-invert: 0%; /**/
   --background-blur: 1px; /**/
   --background-overlay: rgba(0,0,0,0.6); /**/
-  --user-popout-image: url(https://cdn.discordapp.com/attachments/860592935203766292/1123365749218623528/zQ6z0wU.jpg); /**/
+  --user-popout-image: url(https://cdn.discordapp.com/attachments/860592935203766292/1123365749218623528/zQ6z0wU.jpg); /*Background Image for User Popouts*/
   --user-popout-position: center; /**/
   --user-popout-size: cover; /**/
   --user-popout-repeat: no-repeat; /**/
@@ -42,7 +42,7 @@
   --user-popout-grayscale: 0%; /**/
   --user-popout-invert: 0%; /**/
   --user-popout-blur: 1px; /**/
-  --user--image: url(https://cdn.discordapp.com/attachments/860592935203766292/1123365749549977740/dAqXxay.jpg); /**/
+  --user--image: url(https://cdn.discordapp.com/attachments/860592935203766292/1123365749549977740/dAqXxay.jpg); /*Background Image for Profiles*/
   --user--position: center; /**/
   --user--size: cover; /**/
   --user--repeat: no-repeat; /**/
@@ -81,21 +81,21 @@
   --backdrop-grayscale: var(--background-grayscale); /**/
   --backdrop-sepia: var(--background-sepia); /**/
   --backdrop-blur: var(--background-blur); /**/
-  --rs-small-spacing: 2px; /**/
-  --rs-medium-spacing: 3px; /**/
-  --rs-large-spacing: 4px; /**/
-  --rs-small-width: 2px; /**/
-  --rs-medium-width: 3px; /**/
-  --rs-large-width: 4px; /**/
-  --rs-avatar-shape: 50%; /**/
-  --rs-online-color: #43b581; /**/
-  --rs-idle-color: #faa61a; /**/
-  --rs-dnd-color: #f04747; /**/
-  --rs-offline-color: #636b75; /**/
-  --rs-streaming-color: #643da7; /**/
-  --rs-phone-visible: block; /**/
+  --rs-small-spacing: 2px; /*User list avatar space between avatar and ring*/
+  --rs-medium-spacing: 3px; /*User popout avatar space between avatar and ring*/
+  --rs-large-spacing: 4px; /*User profile avatar space between avatar and ring*/
+  --rs-small-width: 2px; /*User list ring thickness*/
+  --rs-medium-width: 3px; /*User popout ring thickness*/
+  --rs-large-width: 4px; /*User profile ring thickness */
+  --rs-avatar-shape: 50%; /*Roundness of the Avatar*/
+  --rs-online-color: #43b581; /*Avatar Circle for people that are online normally*/
+  --rs-idle-color: #faa61a; /*Avatar Circle for people that are on idle*/
+  --rs-dnd-color: #f04747; /*Avatar Circle for people that are on DnD*/
+  --rs-offline-color: #636b75; /*Avatar Circle for people that are offline*/
+  --rs-streaming-color: #643da7; /*Avatar Circle for people streaming*/
+  --rs-phone-visible: block; /*Small Phone Icon visibility, either block to show or none to hide*/
   --settingsbackground: url(https://cdn.discordapp.com/attachments/860592935203766292/1123242644269699112/kEaVjPj.jpg);	/*Settings Background, supports colours and images*/
-  --settingsbrightness: 40%; /*Brightness of the Settings Background*/
-  --settingswidth: 90vw;	/* default:	90vw*/
-  --settingsheight: 90vh; /* default:	90vh*/		
+  --settingsbrightness: 40%; /*Brightness of the Settings Background, default: 40%*/
+  --settingswidth: 90vw;	/* Settings window width, default:	90vw*/
+  --settingsheight: 90vh; /* Settings window height, default:	90vh*/		
 }
