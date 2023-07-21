@@ -25,3 +25,7 @@
   .scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>:nth-child(8) {
     margin-top: 14px;
   }
+  .hintContainer-CsCBWg>:first-child>:first-child {
+  position: relative;
+  right: 3px;
+ }
