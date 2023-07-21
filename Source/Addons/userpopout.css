@@ -1,31 +1,31 @@
 .theme-dark .container-YkUktl .avatar-1EWyVD:hover:after,.divider-2dDziJ.divider-on9OTV,.vc-rdb-modal-footer,[class="section-28YDOf section-1TK4Q0 lastSection-q3HCfo"],.vc-expandableheader-center-flex > :last-child,.vc-expandableheader-center-flex > :first-child > svg,div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4Idk.thin-RnSY0a.scrollerBase-1Pkza4 > textarea,[class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(1), [class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(2), [class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(3),  [class*=separator-],  div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > div:nth-child(4), div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > div:nth-child(5) > div > button:nth-child(2),  div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > div.vc-rdb-view{
     display: none !important;
   }
-  #account-edit-custom-status:before {
+#account-edit-custom-status:before {
     display: block;
     width: 18px;
     height: 18px;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.586 3a2 2 0 0 1 2.828 0L21 5.586a2 2 0 0 1 0 2.828L19.414 10 14 4.586 15.586 3zm-3 3-9 9A2 2 0 0 0 3 16.414V19a2 2 0 0 0 2 2h2.586A2 2 0 0 0 9 20.414l9-9L12.586 6z" fill="rgba(255, 255, 255, 0.7)" /></svg>'); /*https://fontawesomeicons.com/svg/icons/edit-pen-2*/
     content: "";
     margin-right: 8px;
-  }
-  .vc-expandableheader-center-flex > :first-child{
+}
+.vc-expandableheader-center-flex > :first-child{
     position: absolute;
     left: 10px;
     height: 15px;
     width: 90px;
     z-index: 2;
-  }
-  .scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > :nth-child(5) {
+}
+.memberSinceContainer-2CBD23 {
     margin-top: 6px;
-  }
-  #account {
+}
+#account {
     margin-top: -10px;
-  }
-  .scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>:nth-child(8) {
+}
+.inputDefault-Ciwd-S.input-3O04eu.enter-comment.vc-rdb-input {
     margin-top: 14px;
-  }
-  .hintContainer-CsCBWg>:first-child>:first-child {
-  position: relative;
-  right: 3px;
- }
+}
+.hintContainer-CsCBWg>:first-child>:first-child {
+    position: relative;
+    right: 3px;
+}
