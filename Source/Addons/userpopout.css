@@ -16,14 +16,12 @@
     width: 90px;
     z-index: 2;
 }
-.memberSinceContainer-2CBD23 {
-    margin-top: 6px;
+.userPopoutOverlayBackground-3A0Pcz.overlayBackground-2aa7wt>.scroller-15bIdk>*{
+   margin-top: 4px;
+   margin-bottom: 8px;
 }
 #account {
     margin-top: -10px;
-}
-.inputDefault-Ciwd-S.input-3O04eu.enter-comment.vc-rdb-input {
-    margin-top: 14px;
 }
 .hintContainer-CsCBWg>:first-child>:first-child {
     position: relative;
