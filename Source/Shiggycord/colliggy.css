@@ -16,7 +16,6 @@
     transition-duration: .15s;
     transition-timing-function: ease-in-out;
 }
-.container-YkUktl:hover > div:nth-child(2), #vc-spotify-player:hover > div.vc-spotify-button-row, .container-1zzFcN:hover > div:nth-child(2) {
+.container-YkUktl:hover > div:nth-child(2), #vc-spotify-player:hover > div.vc-spotify-button-row, .container-1zzFcN:hover > actionButtons-2vEOUh {
     max-height: 32px;
 }
-  
