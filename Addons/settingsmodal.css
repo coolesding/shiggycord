@@ -7,8 +7,8 @@
 	position: absolute;
 	top: 0;
 	border-radius: 10px;
-	width: var(--settingswidth);
-	height: var(--settingsheight);
+	width: var(--modalwidth);
+	height: var(--modalheight);
 	margin: auto;
 	padding: 0;
   	z-index: 10;
@@ -50,7 +50,7 @@
 	z-index: -1;
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
-	max-width: calc(var(--settingswidth) - 332px - var(--settingsiconsadditionalsize));
+	max-width: calc(var(--modalwidth) - 332px - var(--settingsiconsadditionalsize));
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm {
 	gap: 30px;
@@ -58,20 +58,20 @@
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .sectionsContainer-3BlPu4,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .editor-328F1U,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f {
-	min-width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
-	max-width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	min-width: calc((var(--modalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	max-width: calc((var(--modalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .sectionsContainer-3BlPu4,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .editor-328F1U,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f {
-	min-width: calc((var(--settingswidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
-	max-width: calc((var(--settingswidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
+	min-width: calc((var(--modalwidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
+	max-width: calc((var(--modalwidth) - 344px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutOuter-1OHwPL {
-	width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	width: calc((var(--modalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f .userPopoutOuter-1OHwPL {
-	width: calc((var(--settingswidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
+	width: calc((var(--modalwidth) - 332px - var(--settingsiconsadditionalsize)) / 2);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .profileCustomizationSection-53kreU .baseLayout-1_9QRm .preview-sMYs9f .userPopoutOuter-1OHwPL,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .baseLayout-1_9QRm.tryItOutLayout-2ypO8Z .preview-sMYs9f .userPopoutOuter-1OHwPL {
@@ -83,7 +83,7 @@
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .settingsContainer-36qZZ9,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .guildsSection-30CJxX {
-	max-width: calc(var(--settingswidth) - 332px - var(--settingsiconsadditionalsize));
+	max-width: calc(var(--modalwidth) - 332px - var(--settingsiconsadditionalsize));
 }
 
 #app-mount .perks-CLcR1c {
@@ -95,8 +95,8 @@
 	padding: unset;
 }
 #app-mount .perks-CLcR1c::before {
-	width: var(--settingswidth);
-	height: var(--settingsheight);
+	width: var(--modalwidth);
+	height: var(--modalheight);
 	margin: auto;
 }
 #app-mount .perksContentWrapper-3RHugb {

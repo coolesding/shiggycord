@@ -112,8 +112,8 @@
   --rs-streaming-color: #643da7; /*Avatar Circle for people streaming*/
   --settingsbackground: url(https://cdn.discordapp.com/attachments/860592935203766292/1123242644269699112/kEaVjPj.jpg);	/*Settings Background, supports colours and images*/
   --settingsbrightness: 40%; /*Brightness of the Settings Background, default: 40%*/
-  --settingswidth: 90vw;	/* Settings window width, default:	90vw*/
-  --settingsheight: 90vh; /* Settings window height, default:	90vh*/		
+  --modalwidth: 85vw;	/* Modal (settings and reviewdb) window width, default:	90vw*/
+  --modalheight: 85vh; /* Modal (settings and reviewdb) window height, default:	90vh*/		
 }
 
 /*Custom stuff below here!*/

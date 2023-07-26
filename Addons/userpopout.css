@@ -27,3 +27,7 @@
     position: relative;
     right: 3px;
 }
+.medium-2JV7bE {
+    width: var(--modalwidth);
+    height: var(--modalheight);
+  }
