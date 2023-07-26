@@ -1,16 +1,33 @@
-/**
- * @name Shiggycord
- * @author Coolesding
- * @authorId 406084422308331522
- * @version 1.1.3
- * @description Kemomimichan Theme based on Clearvision v6 (https://github.com/ClearVision/ClearVision-v6)
- * @website https://discord.gg/cPQHsZZBw5
- * @source https://github.com/xdCoolesding/shiggycord
- * @invite cPQHsZZBw5
-*/
-
+/*Base Clearvision and shiggycord files, must be active silly!*/
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Source/Shiggycord/shiggycord.css);
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Shiggycord/mainshiggy.css);
+
+
+
+/*Shiggify things*/
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Shiggycord/shigging.css);
+
+
+/*Some extra Addons*/
+
+  /*Settings Window instead of the weird full page */
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/settingsmodal.css);
+
+  /*Changed user popouts*/
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/userpopout.css);
+
+  /*Collapsing Things*/
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/collapsing.css);
+
+  /*Status Rings*/
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/radialstatus.css);
+
+  /*Hover Effect on many buttons*/
+@import url(https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css);
+
+  /*Window Buttons moved into discord app*/
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/winbar.css);
+
 
 :root {
   --main-color: #778A0F; /*Colour of most things*/
@@ -93,9 +110,10 @@
   --rs-dnd-color: #f04747; /*Avatar Circle for people that are on DnD*/
   --rs-offline-color: #636b75; /*Avatar Circle for people that are offline*/
   --rs-streaming-color: #643da7; /*Avatar Circle for people streaming*/
-  --rs-phone-visible: block; /*Small Phone Icon visibility, either block to show or none to hide*/
   --settingsbackground: url(https://cdn.discordapp.com/attachments/860592935203766292/1123242644269699112/kEaVjPj.jpg);	/*Settings Background, supports colours and images*/
   --settingsbrightness: 40%; /*Brightness of the Settings Background, default: 40%*/
   --settingswidth: 90vw;	/* Settings window width, default:	90vw*/
   --settingsheight: 90vh; /* Settings window height, default:	90vh*/		
 }
+
+/*Custom stuff below here!*/

@@ -27,3 +27,51 @@
 #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div.typing-2J1mQU.base-3bcbY3 {
   background: none;
 }
+
+#vc-spotify-progress-bar .bar-2H7Q9u {
+  background: url("https://cdn.discordapp.com/attachments/860592935203766292/1123993828009988248/oOQBMj0.png") !important;
+  background-size: 100% !important;
+  height: 4px !important;
+}
+.barFill-3RgCsY {
+  display: none;
+}
+#vc-spotify-progress-bar > div.sliderContainer-3vLXjN > div > div:nth-child(3) > div {
+  border: none;
+  background-color: rgba(0,0,0,0);
+  box-shadow: none; 
+}
+.grabber-3R-Rx9:after {
+  content: "";
+  background: url("https://cdn.discordapp.com/attachments/860592935203766292/1123987529331392574/ZJVWifs.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 18px !important;
+  height: 18px !important;
+  position: absolute;
+  left: -4px;
+  top: -13px;
+  transform: scaleX(-1);
+}
+#vc-spotify-progress-bar:before {
+    content: "";
+    position: absolute;
+    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1123998596514197515/c19Wayw.png);
+    background-size: contain;
+    height: 20px;
+    width: 12.8px;
+    bottom: 17px;
+    left: -5px;
+    display: block;
+}
+#vc-spotify-progress-bar:after {
+    content: "";
+    position: absolute;
+    background: url(https://cdn.discordapp.com/attachments/860592935203766292/1124000386567647303/IXwpwda.png);
+    background-size: contain;
+    height: 20px;
+    width: 12.8px;
+    bottom: 17px;
+    left: 195px;
+    display: block;
+}
