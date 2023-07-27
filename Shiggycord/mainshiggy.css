@@ -19,7 +19,6 @@
   content: "Shiggycord " var(--sc-version);
   display: block;
 }
-.buttons-uaqb-5 > .button-ejjZWC:first-child, #app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div > nav > div.scroller-WSmht3.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > ul > li:nth-child(3),/*Nitro Button in Direct Messages*/
 [mask="url(#62972d41-0c73-4c89-ac45-101880b12e52)"]/*idk anymore*/,
 [data-list-id=guildsnav]>:nth-child(2)>:nth-last-child(2) /*Remove Discover Server Icon*/
 [aria-label="Threads"],/*Open Thread Icon in Toolbar */
