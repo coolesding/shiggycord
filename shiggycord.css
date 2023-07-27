@@ -25,6 +25,9 @@
   /*Hover Effect on many buttons*/
 @import url(https://zuzumi-f.github.io/Moon-Rabbits-Dream-About-Virtual/release/pop.css);
 
+  /*Hide all mentions of Nitro and Nitro features*/
+@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/hidenitro.css);
+
   /*Window Buttons moved into discord app*/
 @import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/winbar.css);
 
