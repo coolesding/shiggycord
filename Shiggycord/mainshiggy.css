@@ -19,8 +19,8 @@
   content: "Shiggycord " var(--sc-version);
   display: block;
 }
-[mask="url(#62972d41-0c73-4c89-ac45-101880b12e52)"]/*idk anymore*/,
-[data-list-id=guildsnav]>:nth-child(2)>:nth-last-child(2) /*Remove Discover Server Icon*/
+.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4>div:not([class],[aria-label])/*remove broadcast icon*/,
+.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4>:nth-last-child(2) /*Remove Discover Server Icon*/
 [aria-label="Threads"],/*Open Thread Icon in Toolbar */
 [aria-label="Notification Settings"] /*Notification Settings Icon in Toolbar*/, 
 [aria-label="New Group DM"]/*New Group DM in Friends Menu */, 
