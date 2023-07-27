@@ -8,7 +8,7 @@
 .flex-2S1XBF > button {
     width: 100%;
 }
-.container-YkUktl > div:nth-child(2), #vc-spotify-player > div.vc-spotify-button-row, .container-1zzFcN > div:nth-child(2){
+.container-YkUktl > div:nth-child(2), #vc-spotify-player > div.vc-spotify-button-row, .container-1zzFcN > .actionButtons-2vEOUh{
     justify-content: space-between;
     max-height: 0;
     overflow: hidden;
