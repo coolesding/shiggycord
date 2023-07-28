@@ -2,19 +2,6 @@
   --sc-version: "1.2.1";
   --bg-overlay-1: ;
 }
-.theme-dark .container-YkUktl:before {
-  content: "shiggycord";
-  color: var(--main-color);
-  font-size: 12px;
-  right: 50%;
-  bottom: -5%;
-}
-.theme-dark .container-YkUktl:after {
-  content: var(--sc-version);
-  color: var(--hover-color);
-  left: 60%;
-  font-size: 14px;
-}
 #app-mount .info-3pQQBb .text-xs-normal-3O7EaX.line-18uChy:first-child:before {
   content: "Shiggycord " var(--sc-version);
   display: block;
