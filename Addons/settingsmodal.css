@@ -20,7 +20,8 @@
 	height: 100%;
 	background: var(--settingsbackground);
 	filter: brightness(var(--settingsbrightness));
-  }
+	background-size: cover;
+}
 #app-mount .layer-86YKbF ~ .layer-86YKbF > div,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j {
 	position: absolute;
