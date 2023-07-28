@@ -2,12 +2,28 @@
   --sc-version: "1.2.1";
   --bg-overlay-1: ;
 }
+.container-YkUktl:before, .container-YkUktl:after {
+  display: none;
+}
+.panels-3wFtMD:before {
+  position: absolute;
+  content: "shiggycord " var(--sc-version);
+  font-size: 13px;
+  color: var(--main-color);
+  bottom: -12px;
+  left: 65px;
+  font-weight: 700;
+
+}
+.panels-3wFtMD:hover:before {
+  bottom: 4px;
+  transition-duration: 2s;
+}
 #app-mount .info-3pQQBb .text-xs-normal-3O7EaX.line-18uChy:first-child:before {
   content: "Shiggycord " var(--sc-version);
   display: block;
 }
-.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4>div:not([class],[aria-label])/*remove broadcast icon*/,
-.scroller-3X7KbA.none-1rXy4P.scrollerBase-1Pkza4>:nth-last-child(2) /*Remove Discover Server Icon*/
+
 [aria-label="Threads"],/*Open Thread Icon in Toolbar */
 [aria-label="Notification Settings"] /*Notification Settings Icon in Toolbar*/, 
 [aria-label="New Group DM"]/*New Group DM in Friends Menu */, 
