@@ -1,6 +1,12 @@
 .accountProfilePopoutWrapper-3GskID.section-28YDOf,.separator-12G2Op,.userInfoSectionHeader-2mYYun:nth-child(5),.divider-2dDziJ,.divider-SH6OnO,.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>.section-28YDOf.lastSection-q3HCfo,.theme-dark.container-YkUktl.avatar-1EWyVD:hover:after,.divider-2dDziJ.divider-on9OTV,.vc-rdb-modal-footer,[class="section-28YDOf section-1TK4Q0 lastSection-q3HCfo"],.vc-expandableheader-center-flex>:last-child,.vc-expandableheader-center-flex>:first-child>svg,div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4Idk.thin-RnSY0a.scrollerBase-1Pkza4>textarea,[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>div:nth-child(1),[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>div:nth-child(2),[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>div:nth-child(3),[class*=separator-],div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>div:nth-child(5)>div>button:nth-child(2),div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>div.vc-rdb-view{
     display: none !important;
-  }
+}
+.rolePill-78LFtg, .badgeList-2aoHPw, [class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
+    background: transparent 
+}
+[class*=roles-],.markup-eYLPri>div>.blockquoteContainer-3VtvI1 {
+    justify-content: center 
+}
 #account-edit-custom-status:before {
     display: block;
     width: 18px;
@@ -40,9 +46,6 @@
 .medium-2JV7bE {
     width: var(--modalwidth);
     height: var(--modalheight);
-}
-[class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
-	background: transparent
 }
 [class*=pronouns-] {
 	text-transform: none;
@@ -92,14 +95,8 @@
 .profileBadges-2pItdR {
 	background-color: transparent 
 }
-.rolePill-78LFtg {
-	background: transparent 
-}
 [class*="role-"] [class*="roleCircle-"]:before,[class*="actionButton-"][class*="role-"][class*="justifyCenter-"] {
 	border-radius: 10px 
-}
-[class*=roles-] {
-	justify-content: center 
 }
 [class*="role-"] {
 	transform: translate(0);
@@ -136,10 +133,4 @@
 .flowerStarContainer-1QeD-L.connectedAccountVerifiedIcon-3EPFPC>svg>path {
 	fill: var(--profile-body-divider-color);
 	filter: brightness(1) contrast(2)
-}
-.badgeList-2aoHPw {
-	background: transparent;
-}
-.markup-eYLPri>div>.blockquoteContainer-3VtvI1{
-  justify-content: center;
 }
