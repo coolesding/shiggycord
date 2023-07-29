@@ -2,9 +2,6 @@
   --sc-version: "1.3.0";
   --bg-overlay-1: ;
 }
-.container-YkUktl:before, .container-YkUktl:after {
-  display: none;
-}
 .panels-3wFtMD:before {
   position: absolute;
   content: "shiggycord " var(--sc-version);
@@ -23,7 +20,7 @@
   content: "Shiggycord " var(--sc-version);
   display: block;
 }
-
+.container-YkUktl:before, .container-YkUktl:after, /*clearvision indicator*/
 [aria-label="Threads"],/*Open Thread Icon in Toolbar */
 [aria-label="Notification Settings"] /*Notification Settings Icon in Toolbar*/, 
 [aria-label="New Group DM"]/*New Group DM in Friends Menu */, 
