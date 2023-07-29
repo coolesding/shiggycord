@@ -1,4 +1,4 @@
-.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > .section-28YDOf.lastSection-q3HCfo, .theme-dark .container-YkUktl .avatar-1EWyVD:hover:after,.divider-2dDziJ.divider-on9OTV,.vc-rdb-modal-footer,[class="section-28YDOf section-1TK4Q0 lastSection-q3HCfo"],.vc-expandableheader-center-flex > :last-child,.vc-expandableheader-center-flex > :first-child > svg,div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4Idk.thin-RnSY0a.scrollerBase-1Pkza4 > textarea,[class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(1), [class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(2), [class*=accountProfilePopoutWrapper-] > div > div > [class*=userPopoutOverlayBackground-] > div:nth-child(3),  [class*=separator-], div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > div:nth-child(5) > div > button:nth-child(2),  div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4 > div.vc-rdb-view{
+.accountProfilePopoutWrapper-3GskID.section-28YDOf,.separator-12G2Op,.userInfoSectionHeader-2mYYun:nth-child(5),.divider-2dDziJ,.divider-SH6OnO,.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>.section-28YDOf.lastSection-q3HCfo,.theme-dark.container-YkUktl.avatar-1EWyVD:hover:after,.divider-2dDziJ.divider-on9OTV,.vc-rdb-modal-footer,[class="section-28YDOf section-1TK4Q0 lastSection-q3HCfo"],.vc-expandableheader-center-flex>:last-child,.vc-expandableheader-center-flex>:first-child>svg,div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4Idk.thin-RnSY0a.scrollerBase-1Pkza4>textarea,[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>div:nth-child(1),[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>div:nth-child(2),[class*=accountProfilePopoutWrapper-]>div>div>[class*=userPopoutOverlayBackground-]>div:nth-child(3),[class*=separator-],div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>div:nth-child(5)>div>button:nth-child(2),div.scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4>div.vc-rdb-view{
     display: none !important;
   }
 #account-edit-custom-status:before {
@@ -23,7 +23,6 @@
 .userPopoutOverlayBackground-3A0Pcz.overlayBackground-2aa7wt>.scroller-15bIdk>:not([class],[aria-hidden]) {
   position: relative;
   left: 96px;
-
 }
 .userPopoutOverlayBackground-3A0Pcz.overlayBackground-2aa7wt>.scroller-15bIdk>:not([class],[aria-hidden])>:first-child {
   font-size: 14px;
@@ -79,9 +78,6 @@
 .platformIcon-k3yytQ {
 	margin: 2px 2px 
 }
-.divider-2dDziJ, .divider-SH6OnO {
-	display: none
-}
 .scroller-Q9d9Di {
 	left: 12.5%
 }
@@ -129,9 +125,6 @@
 	background: inherit;
 	border: 2px solid transparent;
 	opacity: .4
-}
-.accountProfilePopoutWrapper-3GskID .section-28YDOf, .separator-12G2Op, .userInfoSectionHeader-2mYYun:nth-child(5) {
-	display: none !important
 }
 .connectedAccountContainer-3aLMHJ {
 	border-width: var(--section-thickness);
