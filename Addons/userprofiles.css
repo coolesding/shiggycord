@@ -4,7 +4,7 @@
 .rolePill-78LFtg, .badgeList-2aoHPw, [class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
     background: transparent 
 }
-[class*=roles-],.markup-eYLPri>div>.blockquoteContainer-3VtvI1 {
+[class*=roles-] {
     justify-content: center 
 }
 #account-edit-custom-status:before {
@@ -69,11 +69,34 @@
 	justify-content: center;
 	text-align: center
 }
-.theme-dark .section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .tabBar-2hXqzU {
 	background: hsl(var(--primary-100-hsl)/0.1) !important
 }
-.theme-light .section-28YDOf>div:not(.roles-3vQPxb),.theme-light .container-3g15px, .theme-light .userInfoText-2MFCmH {
-	background: hsl(var(--primary-600-hsl)/0.1) !important
+.container-3g15px>* {
+  position: relative;
+  background: transparent;
+  margin: auto;
+}
+.container-3g15px {
+  display: grid;
+  width: 177px;
+  padding: 0px;
+  height: 168px;
+}
+.tabBarContainer-sCZC4w {
+  margin: 20px 0 0 0;
+  padding: 0px;
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  border: none;
+}
+.top-Ktfr_T .item-2GWPIy {
+  border: transparent;
+  border-radius: 1em;
+  height: 21px;
+  padding: 8px 1em;
+  font-weight: 600;
 }
 .divider-MZkkle {
 	background: var(--profile-body-divider-color) 
