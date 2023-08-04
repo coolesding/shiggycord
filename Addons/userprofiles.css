@@ -55,12 +55,11 @@
 	padding: 0.25em 0.375em;
 	margin: 0.25em 0 0 0;
 	border-radius: 0.5rem;
-	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
 }
 .buttonsContainer-3iOFIV > button {
 	border-radius: 0.5rem;
 }
-.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .tabBarContainer-sCZC4w>:first-child {
 	border-radius: 0.5rem;
 	padding: 0.5em;
 	border: var(--section-thickness) solid var(--profile-body-divider-color);
@@ -69,8 +68,28 @@
 	justify-content: center;
 	text-align: center
 }
-.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .tabBar-2hXqzU {
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .tabBarContainer-sCZC4w>:first-child {
 	background: hsl(var(--primary-100-hsl)/0.1) !important
+}
+.tabBarContainer-sCZC4w{
+  position: absolute;
+  right: 0%;
+  width: 60%;
+  margin: 3.522% 0 0 0;
+  height: 28.274%;
+  padding: 0%;
+  top: -5.196%;
+  border: none;
+}
+.tabBarContainer-sCZC4w>:first-child {
+  flex-wrap: wrap;
+  gap: 0%;
+  justify-content: center;
+  height: 100%;
+  padding: 0%;
+}
+.section-28YDOf.usernameSection-3FppkT > div {
+  overflow-x: hidden;
 }
 .container-3g15px>* {
   position: relative;
@@ -81,15 +100,8 @@
   display: grid;
   width: 177px;
   padding: 0px;
-  height: 168px;
-}
-.tabBarContainer-sCZC4w {
-  margin: 20px 0 0 0;
-  padding: 0px;
-  position: absolute;
-  right: 0px;
-  top: -20px;
-  border: none;
+  height: 40%;
+  overflow-x: hidden;
 }
 .top-Ktfr_T .item-2GWPIy {
   border: transparent;
