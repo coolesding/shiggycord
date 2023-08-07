@@ -94,7 +94,7 @@
 #app-mount .guilds-2JjMmN {
   transform-origin: top left;
   transform: rotate(-90deg);
-  height: 43vw !important;
+  height: 84vw !important;
   top: var(--server-container);
   bottom: unset;
   position: absolute !important;
