@@ -1,23 +1,10 @@
-@import url(https://raw.githubusercontent.com/xdCoolesding/shiggycord/main/Addons/winbar.css);
-
 :root {
   --server-size: 40px; /* Size of the server icons | DEFAULT: 40px */
   --server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
   --server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
   --server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
   --server-container: calc(var(--server-size) + 20px);
-}
-.container-YkUktl>:last-child {
-  position: absolute;
-  opacity: 0;
-  left: 0px;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-  transition-duration: .30s;
-}
-.container-YkUktl:hover>:last-child {
-  opacity: 100;
-  left: 90%;
+  --server-width: 91.6vw;
 }
 .container-YkUktl {
   background: transparent !important;
@@ -26,31 +13,42 @@
 .container-YkUktl>:first-child {
   background: #1e1f22;
   z-index: 1;
+  height: var(--server-container);
 }
 .container-YkUktl:hover>:first-child {
   background: #403c44;
 }
-
-
-.base-2jDfDU {
-  overflow: visible;
+.container-YkUktl>:last-child {
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: .30s;
+  transition-delay: 3s;
 }
-
-#app-mount > div.appAsidePanelWrapper-ev4hlp > div.notAppAsidePanel-3yzkgB > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.sidebar-1tnWFu > section > div.container-YkUktl > div.avatarWrapper-1B9FTW.withTagAsButton-OsgQ9L {
-  height: var(--server-container);
-}
-
+.wrapper-3Hk9OB {
+  height: 134px;}
 .panels-3wFtMD {
   position: absolute;
   bottom: -7.94%;
   background-color: transparent !important;
 }
-
-
-
-
-
+.container-YkUktl:has(.avatarWrapper-1B9FTW:hover)>:last-child{
+  opacity: 100;
+  left: 130px;
+  transition-delay: 0s;
+}
+.container-1eFtFS:has(.container-YkUktl>:first-child:hover) .guilds-2JjMmN {
+  height: calc(var(--server-width) + -15.41%) !important;
+  transition-delay: 0s !important;
+}
 #app-mount .guilds-2JjMmN {
+  height: var(--server-width);
+  z-index: 2;
+  transition-duration: .30s;
+  transition-property: height;
+  transition-delay: 3s;
   width: var(--server-container);
 }
 #app-mount .guilds-2JjMmN .svg-2ifYOU,
@@ -80,6 +78,7 @@
   right: 0;
   bottom: 0;
   max-width: 100%;
+  overflow: visible;
 }
 #app-mount .sidebar-1tnWFu {
   border-radius: 0;
@@ -94,7 +93,6 @@
 #app-mount .guilds-2JjMmN {
   transform-origin: top left;
   transform: rotate(-90deg);
-  height: 84vw !important;
   top: var(--server-container);
   bottom: unset;
   position: absolute !important;
@@ -245,7 +243,6 @@
   display: flex;
   align-items: center;
 }
-
 html.platform-osx #app-mount .typeMacOS-3V4xXE {
   width: 100%;
 }
@@ -256,17 +253,12 @@ html.platform-osx #app-mount #pluginNotice {
   top: 32px;
   z-index: 100000 !important;
 }
-
 body.foldercontentopened .base-2jDfDU {
   transition: 0.2s ease !important;
 }
-
 .accountProfilePopoutWrapper-3GskID {
   left: 0;
 }
-
-
-
 body #app-mount .app-3xd6d0 .base-2jDfDU {
   top: 0 !important;
   bottom: var(--server-container) !important;
@@ -303,7 +295,6 @@ body #app-mount [class*=listItemTooltip] [class*=tooltipPointer] {
   top: unset !important;
   bottom: -10px !important;
 }
-
 html.platform-osx #app-mount .base-2jDfDU {
   top: 32px !important;
 }
