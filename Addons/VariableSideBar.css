@@ -1,0 +1,17 @@
+.panels-3wFtMD>:not(.container-YkUktl) {
+    width: calc(var(--sidebar-width) - 16px);
+    margin: 0%;
+  }
+  .panels-3wFtMD>.wrapper-3Hk9OB, .sidebar-1tnWFu {
+    width: var(--sidebar-width);
+    padding: 0%;
+  }
+  .content-1SgpWY:has(#vc-spotify-player)>.sidebar-1tnWFu {
+    height: 82.6%;
+  }
+  .content-1SgpWY:has(.wrapper-3Hk9OB>.container-1zzFcN)>.sidebar-1tnWFu {
+    height: 86.1%;
+  }
+  .content-1SgpWY:has(.wrapper-3Hk9OB>.container-1zzFcN):has(#vc-spotify-player)>.sidebar-1tnWFu {
+    height: 68.6% !important;
+  }

@@ -1,21 +1,14 @@
-:root {
-  --server-size: 40px; /* Size of the server icons | DEFAULT: 40px */
-  --server-spacing: 10px; /* Spacing between each server icon | DEFAULT: 10px */
-  --server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
-  --server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
-  --server-container: calc(var(--server-size) + 20px);
-  --server-width: 91.6vw;
-}
 .container-YkUktl {
   background: transparent !important;
   padding-left: 4px;
+  height: var(--serverlist-container);
 }
-.container-YkUktl>:first-child {
+.avatarWrapper-1B9FTW {
   background: #1e1f22;
   z-index: 1;
-  height: var(--server-container);
+  height: var(--serverlist-container);
 }
-.container-YkUktl:hover>:first-child {
+.avatarWrapper-1B9FTW:hover {
   background: #403c44;
 }
 .container-YkUktl>:last-child {
@@ -27,11 +20,9 @@
   transition-duration: .30s;
   transition-delay: 3s;
 }
-.wrapper-3Hk9OB {
-  height: 134px;}
 .panels-3wFtMD {
   position: absolute;
-  bottom: -7.94%;
+  bottom: -8.6%;
   background-color: transparent !important;
 }
 .container-YkUktl:has(.avatarWrapper-1B9FTW:hover)>:last-child{
@@ -39,24 +30,25 @@
   left: 130px;
   transition-delay: 0s;
 }
-.container-1eFtFS:has(.container-YkUktl>:first-child:hover) .guilds-2JjMmN {
-  height: calc(var(--server-width) + -15.41%) !important;
+.container-1eFtFS:has(.avatarWrapper-1B9FTW:hover:hover) .guilds-2JjMmN {
+  height: calc(var(--serverlist-width) + -15.41%) !important;
   transition-delay: 0s !important;
 }
 #app-mount .guilds-2JjMmN {
-  height: var(--server-width);
+  height: var(--serverlist-width);
   z-index: 2;
   transition-duration: .30s;
   transition-property: height;
+  transition-timing-function: ease-in-out;
   transition-delay: 3s;
-  width: var(--server-container);
+  width: var(--serverlist-container);
 }
 #app-mount .guilds-2JjMmN .svg-2ifYOU,
 #app-mount .guilds-2JjMmN .wrapper-2PSQCG,
 #app-mount .guilds-2JjMmN .guildsError-b7zR5H,
 #app-mount .guilds-2JjMmN .placeholderMask-2FHNZU {
-  width: var(--server-size);
-  height: var(--server-size);
+  width: var(--serverlist-size);
+  height: var(--serverlist-size);
 }
 #app-mount .guilds-2JjMmN [role=group] {
   height: auto !important;
@@ -66,13 +58,13 @@
   translate: -50% 0;
 }
 #app-mount .guilds-2JjMmN .wrapper-z5ab_q {
-  height: var(--server-size) !important;
+  height: var(--serverlist-size) !important;
 }
 #app-mount .guilds-2JjMmN .wrapper-38slSD {
-  width: var(--server-container);
+  width: var(--serverlist-container);
 }
 #app-mount .app-3xd6d0 .base-2jDfDU {
-  top: var(--server-container) !important;
+  top: var(--serverlist-container) !important;
   position: absolute !important;
   left: 0 !important;
   right: 0;
@@ -84,7 +76,7 @@
   border-radius: 0;
 }
 #app-mount [class*=unreadMentionsIndicator] {
-  width: var(--server-size);
+  width: var(--serverlist-size);
   padding: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -93,7 +85,7 @@
 #app-mount .guilds-2JjMmN {
   transform-origin: top left;
   transform: rotate(-90deg);
-  top: var(--server-container);
+  top: var(--serverlist-container);
   bottom: unset;
   position: absolute !important;
   left: 0;
@@ -102,12 +94,12 @@
   margin-bottom: 0 !important;
 }
 #app-mount .guilds-2JjMmN .scrollerBase-1Pkza4 {
-  padding: var(--server-spacing) 0 !important;
+  padding: var(--serverlist-spacing) 0 !important;
   display: flex;
-  flex-direction: var(--server-direction);
-  gap: var(--server-spacing);
-  align-items: var(--server-alignment);
-  justify-content: var(--server-alignment);
+  flex-direction: var(--serverlist-direction);
+  gap: var(--serverlist-spacing);
+  align-items: var(--serverlist-alignment);
+  justify-content: var(--serverlist-alignment);
 }
 #app-mount .guilds-2JjMmN .scrollerBase-1Pkza4 > div[style]:not(.listItem-2P_4kh) {
   height: auto !important;
@@ -117,14 +109,14 @@
 }
 #app-mount .guilds-2JjMmN .scrollerBase-1Pkza4 > div[aria-label] {
   display: flex;
-  flex-direction: var(--server-direction);
-  gap: var(--server-spacing);
+  flex-direction: var(--serverlist-direction);
+  gap: var(--serverlist-spacing);
 }
 #app-mount .guilds-2JjMmN [class*=pill] {
   transform: rotate(90deg) translateY(-50%);
-  height: var(--server-size);
+  height: var(--serverlist-size);
   width: 4px;
-  top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 8px) !important;
+  top: calc(var(--serverlist-size) / -1 + var(--serverlist-size) / 2 - 8px) !important;
   margin-left: -2px;
 }
 #app-mount .guilds-2JjMmN [class*=pill] span {
@@ -146,23 +138,23 @@
 }
 #app-mount .guilds-2JjMmN .wrapper-38slSD {
   display: flex;
-  flex-direction: var(--server-direction);
-  gap: var(--server-spacing);
+  flex-direction: var(--serverlist-direction);
+  gap: var(--serverlist-spacing);
 }
 #app-mount .guilds-2JjMmN .wrapper-38slSD ul[role=group] {
   display: flex;
-  flex-direction: var(--server-direction);
-  gap: var(--server-spacing);
+  flex-direction: var(--serverlist-direction);
+  gap: var(--serverlist-spacing);
 }
 #app-mount .guilds-2JjMmN [class*=listItem]:not([class*=listItemWrapper]) {
-  width: var(--server-size);
+  width: var(--serverlist-size);
   transform: rotate(90deg);
   margin: 0 10px;
   position: unset;
 }
 #app-mount .guilds-2JjMmN [class*=guildSeparator] {
   transform: rotate(90deg);
-  width: var(--server-size);
+  width: var(--serverlist-size);
 }
 #app-mount .guilds-2JjMmN [class*=expandedFolderBackground] {
   border-radius: 10px;
@@ -177,7 +169,7 @@
 }
 #app-mount .guilds-2JjMmN .target-1eRTCg::before {
   top: 0;
-  height: var(--server-size);
+  height: var(--serverlist-size);
   width: 4px;
   left: -6px;
 }
@@ -188,8 +180,8 @@
   position: absolute;
   max-width: unset;
   white-space: nowrap;
-  margin-left: calc(var(--server-size) / -1 - 20px);
-  top: calc(var(--server-size) - 10px);
+  margin-left: calc(var(--serverlist-size) / -1 - 20px);
+  top: calc(var(--serverlist-size) - 10px);
 }
 #app-mount [class*=listItemTooltip] [class*=tooltipPointer] {
   transform: rotate(180deg);
@@ -201,23 +193,23 @@
 #app-mount .friendsOnline-2JkivW {
   position: absolute;
   transform: translate(-50%, 50%);
-  top: calc(-50% + var(--server-spacing));
+  top: calc(-50% + var(--serverlist-spacing));
   left: -50%;
-  width: calc(var(--server-size) + var(--server-spacing));
+  width: calc(var(--serverlist-size) + var(--serverlist-spacing));
   display: flex;
   justify-content: center;
 }
 #app-mount .guilds-2JjMmN.content-Pph8t6,
 #app-mount .BF-folderSidebar {
   position: absolute !important;
-  top: calc(var(--server-container) * 2) !important;
+  top: calc(var(--serverlist-container) * 2) !important;
 }
 #app-mount .guilds-2JjMmN.content-Pph8t6:not(.closed-j55_T-) + .base-2jDfDU,
 #app-mount .BF-folderSidebar:not(.closed-j55_T-) + .base-2jDfDU {
-  top: calc(var(--server-container) * 2.5) !important;
+  top: calc(var(--serverlist-container) * 2.5) !important;
 }
 #app-mount .guilds-2JjMmN .frame-oXWS21[class*=listItem] {
-  height: var(--server-size) !important;
+  height: var(--serverlist-size) !important;
 }
 #app-mount .guilds-2JjMmN .frame-oXWS21[class*=listItem] .wrapper-3kah-n {
   height: 100% !important;
@@ -232,12 +224,12 @@
   text-align: center;
 }
 #app-mount .BF-folderSidebar {
-  top: calc(var(--server-container)) !important;
+  top: calc(var(--serverlist-container)) !important;
 }
-#app-mount .serverCountWrap-k8F5De {
-  height: var(--server-size);
+#app-mount .serverlistCountWrap-k8F5De {
+  height: var(--serverlist-size);
 }
-#app-mount .serverCount-FsTTs1 {
+#app-mount .serverlistCount-FsTTs1 {
   white-space: pre-line;
   font-size: 12px;
   display: flex;
@@ -247,7 +239,7 @@ html.platform-osx #app-mount .typeMacOS-3V4xXE {
   width: 100%;
 }
 html.platform-osx #app-mount .base-2jDfDU {
-  top: calc(var(--server-container) + 30px) !important;
+  top: calc(var(--serverlist-container) + 30px) !important;
 }
 html.platform-osx #app-mount #pluginNotice {
   top: 32px;
@@ -261,7 +253,7 @@ body.foldercontentopened .base-2jDfDU {
 }
 body #app-mount .app-3xd6d0 .base-2jDfDU {
   top: 0 !important;
-  bottom: var(--server-container) !important;
+  bottom: var(--serverlist-container) !important;
 }
 body #app-mount .guilds-2JjMmN {
   top: unset !important;
@@ -271,24 +263,24 @@ body #app-mount .guilds-2JjMmN {
 }
 body #app-mount .guilds-2JjMmN [class*=pill] {
   top: unset !important;
-  bottom: calc(var(--server-size) / -1 + var(--server-size) / 2 - 8px) !important;
+  bottom: calc(var(--serverlist-size) / -1 + var(--serverlist-size) / 2 - 8px) !important;
 }
 body #app-mount .guilds-2JjMmN [class*=pill] span {
   border-radius: 4px 0 0 4px;
 }
 body #app-mount .guilds-2JjMmN.content-Pph8t6 {
   top: unset !important;
-  bottom: var(--server-container) !important;
+  bottom: var(--serverlist-container) !important;
 }
 body #app-mount .guilds-2JjMmN.content-Pph8t6:not(.closed-j55_T-) + .base-2jDfDU {
   top: 0 !important;
-  bottom: calc(var(--server-container) * 2) !important;
+  bottom: calc(var(--serverlist-container) * 2) !important;
 }
 body #app-mount [class*=listItemTooltip] {
   position: absolute;
   white-space: nowrap;
-  top: calc(var(--server-size) / -1 - 30px) !important;
-  margin-left: calc(var(--server-size) / -1 - 20px);
+  top: calc(var(--serverlist-size) / -1 - 30px) !important;
+  margin-left: calc(var(--serverlist-size) / -1 - 20px);
 }
 body #app-mount [class*=listItemTooltip] [class*=tooltipPointer] {
   transform: rotate(0) !important;
