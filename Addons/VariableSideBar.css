@@ -1,5 +1,5 @@
 .sidebar-1tnWFu {
-  transition-duration: var(--animation-speed);
+  transition-duration: var(--sidebar-speed);
   transition-property: width;
   transition-timing-function: ease-in-out;
   transition-delay: 1s;
