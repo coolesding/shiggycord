@@ -22,7 +22,7 @@
 }
 .panels-3wFtMD {
   position: absolute;
-  bottom: -8.6%;
+  bottom: -62.2386px;
   background-color: transparent !important;
 }
 .container-YkUktl:has(.avatarWrapper-1B9FTW:hover)>:last-child{
@@ -31,7 +31,7 @@
   transition-delay: 0s;
 }
 .container-1eFtFS:has(.avatarWrapper-1B9FTW:hover:hover) .guilds-2JjMmN {
-  height: calc(var(--serverlist-width) + -15.41%) !important;
+  height: calc(var(--serverlist-width) + -103px) !important;
   transition-delay: 0s !important;
 }
 #app-mount .guilds-2JjMmN {
@@ -243,7 +243,7 @@ html.platform-osx #app-mount .base-2jDfDU {
 }
 html.platform-osx #app-mount #pluginNotice {
   top: 32px;
-  z-index: 100000 !important;
+  z-index: 10 !important;
 }
 body.foldercontentopened .base-2jDfDU {
   transition: 0.2s ease !important;
