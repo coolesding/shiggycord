@@ -1,5 +1,5 @@
 .sidebar-1tnWFu {
-  transition-duration: .3s;
+  transition-duration: var(--animation-speed);
   transition-property: width;
   transition-timing-function: ease-in-out;
   transition-delay: 1s;
@@ -17,6 +17,14 @@
   left: 0px;
   content: "";
   z-index: 1;
+  transition-duration: var(--sidebar-speed);
+  transition-property: opacity;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out;
+}
+.sidebar-1tnWFu:hover:after {
+  opacity: 0;
+  transition-delay: 0s;
 }
 .content-1SgpWY:has(.sidebar-1tnWFu:hover)>.sidebar-1tnWFu {
   width: var(--sidebar-width);
