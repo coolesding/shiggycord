@@ -1,0 +1,7 @@
+:root {
+  --sc-version: "2.0.0";
+}
+#app-mount .info-3pQQBb .text-xs-normal-3O7EaX.line-18uChy:first-child:before {
+  content: "Shiggycord " var(--sc-version);
+  display: block;
+}
