@@ -1,0 +1,190 @@
+#app-mount .wrapper-3Un6-K {
+    border-radius: var(--rs-avatar-shape);
+}
+  #app-mount .wrapper-3Un6-K svg:not(:root) {
+    overflow: visible;
+    contain: none;
+}
+  #app-mount .wrapper-3Un6-K foreignObject {
+    -webkit-mask: none;
+    mask: none;
+}
+  #app-mount .wrapper-3Un6-K .dots-1k2MxY circle {
+    cy: -8 !important;
+}
+  #app-mount .wrapper-3Un6-K .dots-1k2MxY circle:nth-child(1) {
+    cx: -8.5 !important;
+}
+  #app-mount .wrapper-3Un6-K .dots-1k2MxY circle:nth-child(2) {
+    cx: -2.25 !important;
+}
+  #app-mount .wrapper-3Un6-K .dots-1k2MxY circle:nth-child(3) {
+    cx: 4 !important;
+}
+  #app-mount .wrapper-3Un6-K .mask-1y0tyc > rect[x="22"] {
+    x: 0;
+    y: 0;
+}
+  #app-mount .wrapper-3Un6-K .mask-1y0tyc > circle {
+    opacity: 0 !important;
+    width: 100%;
+    height: 100%;
+    cx: 43%;
+    cy: 20;
+}
+  #app-mount .wrapper-3Un6-K .pointerEvents-2KjWnj[x="14.5"] {
+    fill: rgba(0, 0, 0, 0.5) !important;
+    width: 30px;
+    height: 30px;
+    x: 1;
+    y: 1;
+}
+  #app-mount .wrapper-3Un6-K img, #app-mount .wrapper-3Un6-K.avatar-AvHqJA {
+    border-radius: var(--rs-avatar-shape);
+}
+  #app-mount .wrapper-3Un6-K svg[width="25"][height="15"] > rect {
+    rx: calc(var(--rs-avatar-shape) * 2) !important;
+    ry: calc(var(--rs-avatar-shape) * 2) !important;
+}
+  #app-mount .wrapper-3Un6-K[style*="80px"] svg.cursorDefault-2M8ZNp rect, #app-mount .wrapper-3Un6-K[style*="120px"] svg.cursorDefault-2M8ZNp rect {
+    ry: calc(var(--rs-avatar-shape) * 3.3);
+    rx: calc(var(--rs-avatar-shape) * 3.3);
+}
+  #app-mount .wrapper-3Un6-K rect {
+    x: 0;
+    y: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-mask: none;
+    mask: none;
+    display: block;
+    rx: var(--rs-avatar-shape);
+    ry: var(--rs-avatar-shape);
+    fill: transparent !important;
+    stroke-width: var(--rs-small-width);
+}
+  #app-mount .wrapper-3Un6-K rect[fill="#23a55a"] {
+    stroke: var(--rs-online-color);
+}
+  #app-mount .wrapper-3Un6-K rect[fill="#f0b232"] {
+    stroke: var(--rs-idle-color);
+}
+  #app-mount .wrapper-3Un6-K rect[fill="#f23f43"] {
+    stroke: var(--rs-dnd-color);
+}
+  #app-mount .wrapper-3Un6-K rect[fill="#593695"] {
+    stroke: var(--rs-streaming-color);
+}
+  #app-mount .wrapper-3Un6-K rect[fill="#747f8d"] {
+    stroke: var(--rs-offline-color);
+}
+  #app-mount .wrapper-3Un6-K rect[fill="#747f8d"] {
+    stroke: var(--rs-invisible-color);
+}
+  #app-mount .wrapper-3Un6-K rect[x="16"] {
+    width: 24px;
+    height: 24px;
+}
+  #app-mount .wrapper-3Un6-K rect[x="28"] {
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+}
+  #app-mount .wrapper-3Un6-K[style*="32px"] rect {
+    width: 32px;
+    height: 32px;
+    x: -14.5;
+    y: -17;
+    position: relative;
+    z-index: 0;
+}
+  #app-mount .wrapper-3Un6-K[style*="40px"] > svg > svg rect {
+    width: 40px;
+    height: 40px;
+    x: -19;
+    y: -20;
+    ry: calc(var(--rs-avatar-shape) * 3.3);
+    rx: calc(var(--rs-avatar-shape) * 3.3);
+}
+  #app-mount .wrapper-3Un6-K[style*="80px"] svg.cursorDefault-2M8ZNp rect {
+    x: -48;
+    y: -52;
+}
+  #app-mount .wrapper-3Un6-K[style*="80px"] rect {
+    width: 80px;
+    height: 80px;
+    stroke-width: var(--rs-medium-width);
+}
+  #app-mount .wrapper-3Un6-K[style*="80px"] img {
+    -webkit-clip-path: inset(calc(var(--rs-medium-spacing) + 1px) calc(var(--rs-medium-spacing) + 1px) round var(--rs-avatar-shape));
+    clip-path: inset(calc(var(--rs-medium-spacing) + 1px) calc(var(--rs-medium-spacing) + 1px) round var(--rs-avatar-shape));
+}
+  #app-mount .wrapper-3Un6-K[style*="120px"] svg.cursorDefault-2M8ZNp rect {
+    x: -70;
+    y: -76;
+}
+  #app-mount .wrapper-3Un6-K[style*="120px"] rect {
+    width: 120px;
+    height: 120px;
+    stroke-width: var(--rs-large-width);
+}
+  #app-mount .wrapper-3Un6-K[style*="120px"] img {
+    -webkit-clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+    clip-path: inset(calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px) round var(--rs-avatar-shape));
+}
+  #app-mount .wrapper-3Un6-K:not([style*="80px;"], [style*="120px;"], [style*="16px"]) > svg > foreignObject:not(:only-child) img {
+    -webkit-clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+    clip-path: inset(calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px) round var(--rs-avatar-shape));
+}
+  #app-mount .wrapper-3Un6-K[style="width: 16px; height: 16px;"] rect {
+    display: none;
+}
+  #app-mount .wrapper-3Un6-K[style="width: 16px; height: 16px;"] img {
+    -webkit-clip-path: none;
+    clip-path: none;
+}
+  #app-mount .avatarStack-3vfSFa {
+    position: relative;
+}
+  #app-mount .avatarSpeaking-33RRJU {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: var(--rs-avatar-shape);
+    box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #57d39b), inset 0 0 0 3px var(--background-secondary);
+}
+  #app-mount .message-2CShn3 .wrapper-3Un6-K rect[mask*=typing] {
+    width: calc(100% - 9px);
+}
+  #app-mount .avatarHint-2g3Mcd foreignObject {
+    -webkit-mask: none;
+    mask: none;
+}
+  #app-mount .avatarHintInner-3gk_Yx {
+    border-radius: var(--rs-avatar-shape) !important;
+    padding-top: 0;
+    width: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
+    height: calc(100% - var(--rs-medium-width) - var(--rs-medium-spacing) + 2px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+  #app-mount .memberOffline-2lN7gt img {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+}
+  #app-mount .offline-22aM7E img {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+}
+  #app-mount .avatarWrapperNonUserBot-3fzpUZ .wrapper-3Un6-K img {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+}
+  #app-mount .userInfo-2WpsYG .wrapper-3Un6-K {
+    margin-top: 1px;
+    margin-left: 1px;
+}
