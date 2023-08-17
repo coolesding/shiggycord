@@ -2,10 +2,24 @@
   background: transparent !important;
   padding-left: 4px;
   height: var(--serverlist-container);
+  z-index: 1;
+}
+#app-mount .guilds-2JjMmN {
+  transform: rotate(90deg);
+  position: absolute;
+  top: unset;
+  left: 120px;
+  height: calc(100vw - 120px);
+  bottom: 61px;
+  transform-origin: bottom left;
+  z-index: 1;
+  transition-duration: .30s;
+  transition-property: left;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+  width: var(--serverlist-container);
 }
 .avatarWrapper-1B9FTW {
-  background: #1e1f22;
-  z-index: 1;
   height: var(--serverlist-container);
 }
 .avatarWrapper-1B9FTW:hover {
@@ -18,30 +32,24 @@
   transition-property: all;
   transition-timing-function: ease-in-out;
   transition-duration: .30s;
-  transition-delay: 3s;
+  transition-delay: 1s;
 }
 .panels-3wFtMD {
   position: absolute;
   bottom: -62.2386px;
   background-color: transparent !important;
 }
-.container-YkUktl:has(.avatarWrapper-1B9FTW:hover)>:last-child{
+.container-1eFtFS:has(.sidebar-1tnWFu:hover) .container-YkUktl>:last-child{
   opacity: 100;
-  left: 130px;
+  left: 125px;
   transition-delay: 0s;
 }
-.container-1eFtFS:has(.avatarWrapper-1B9FTW:hover:hover) .guilds-2JjMmN {
-  height: calc(var(--serverlist-width) + -103px) !important;
-  transition-delay: 0s !important;
+.container-YkUktl>:last-child>* {
+  margin: 3.66px;
 }
-#app-mount .guilds-2JjMmN {
-  height: var(--serverlist-width);
-  z-index: 2;
-  transition-duration: .30s;
-  transition-property: height;
-  transition-timing-function: ease-in-out;
-  transition-delay: 3s;
-  width: var(--serverlist-container);
+.container-1eFtFS:has(.sidebar-1tnWFu:hover) .guilds-2JjMmN {
+  transition-delay: 0s !important;
+  left: var(--popout-width) !important;
 }
 #app-mount .guilds-2JjMmN .svg-2ifYOU,
 #app-mount .guilds-2JjMmN .wrapper-2PSQCG,
@@ -81,14 +89,6 @@
   left: 50%;
   transform: translateX(-50%);
   height: auto;
-}
-#app-mount .guilds-2JjMmN {
-  transform-origin: top left;
-  transform: rotate(-90deg);
-  top: var(--serverlist-container);
-  bottom: unset;
-  position: absolute !important;
-  left: 0;
 }
 #app-mount .guilds-2JjMmN > [data-list-id=guildsnav] {
   margin-bottom: 0 !important;
@@ -148,7 +148,7 @@
 }
 #app-mount .guilds-2JjMmN [class*=listItem]:not([class*=listItemWrapper]) {
   width: var(--serverlist-size);
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   margin: 0 10px;
   position: unset;
 }
@@ -235,16 +235,6 @@
   display: flex;
   align-items: center;
 }
-html.platform-osx #app-mount .typeMacOS-3V4xXE {
-  width: 100%;
-}
-html.platform-osx #app-mount .base-2jDfDU {
-  top: calc(var(--serverlist-container) + 30px) !important;
-}
-html.platform-osx #app-mount #pluginNotice {
-  top: 32px;
-  z-index: 10 !important;
-}
 body.foldercontentopened .base-2jDfDU {
   transition: 0.2s ease !important;
 }
@@ -255,12 +245,7 @@ body #app-mount .app-3xd6d0 .base-2jDfDU {
   top: 0 !important;
   bottom: var(--serverlist-container) !important;
 }
-body #app-mount .guilds-2JjMmN {
-  top: unset !important;
-  left: 100vw;
-  bottom: 0 !important;
-  transform-origin: bottom left;
-}
+
 body #app-mount .guilds-2JjMmN [class*=pill] {
   top: unset !important;
   bottom: calc(var(--serverlist-size) / -1 + var(--serverlist-size) / 2 - 8px) !important;
@@ -286,7 +271,4 @@ body #app-mount [class*=listItemTooltip] [class*=tooltipPointer] {
   transform: rotate(0) !important;
   top: unset !important;
   bottom: -10px !important;
-}
-html.platform-osx #app-mount .base-2jDfDU {
-  top: 32px !important;
 }
