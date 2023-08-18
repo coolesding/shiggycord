@@ -18,5 +18,5 @@
 	animation: var(--oneko-wakeup-duration) 1 forwards gotosleep, var(--oneko-sleep-duration) var(--oneko-wakeup-duration) infinite sleep;
 }
 .channelTextArea-1FufC0:has(.editor-H2NA06:focus)::before {
-	animation: var(--oneko-wakeup-duration) 1 forwards wakeup, var(--oneko-typing-duration) var(--oneko-wakeup-duration) infinite var(--oneko-typing-animation);
+	animation: var(--oneko-wakeup-duration) 1 forwards wakeup, var(--oneko-focused-duration) var(--oneko-wakeup-duration) infinite var(--oneko-focused-animation);
 }
