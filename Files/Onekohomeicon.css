@@ -9,19 +9,19 @@
 	image-rendering: pixelated;
 	background-image: var(--oneko-skin);
 	animation: sleep, init; 
-	animation-duration: 2s, 2s;
+	animation-duration: var(--oneko-sleep-time), var(--oneko-wakeup-time);
 	animation-iteration-count: infinite, 1;
-	animation-delay: 2s, 0s;
+	animation-delay: var(--oneko-wakeup-time), 0s;
 }
 .homeIcon-r0w4ny {
 	display: none;
 }
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::after {
-	animation: reverse wakeup 1s 1;
+	animation: reverse wakeup 1s 1s;
 }
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n:hover::before,
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n.selected-1Drb7Z::before {
-	animation: 2s 1 forwards wakeup;
+	animation: var(--oneko-wakeup-time) 1 forwards wakeup;
 	opacity: 1;
 }
 @keyframes sleep {
