@@ -6,7 +6,7 @@
 	width: calc(32px/var(--oneko-resolution));
 	height: calc(32px/var(--oneko-resolution));
 	transform: scale(var(--oneko-resolution));
-  position: absolute;
+  	position: absolute;
 	image-rendering: pixelated;
 	animation: sleep var(--oneko-sleep-duration) infinite;
 	background-image: var(--oneko-skin);
