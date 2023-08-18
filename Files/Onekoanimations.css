@@ -1,3 +1,17 @@
+/*Standard Animations:
+alert
+runright
+runleft
+scratchright
+scratchleft
+scratchdown
+scratchup
+spinleft
+spinright
+Probably cursed Animations:
+sleep
+gotosleep
+wakeup*/
 @keyframes sleep {
 	0%,
 	50% {
