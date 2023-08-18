@@ -3,14 +3,15 @@
   padding-left: 4px;
   height: var(--serverlist-container);
   z-index: 1;
+  width: 120px;
 }
 #app-mount .guilds-2JjMmN {
-  transform: rotate(90deg);
+  transform: rotate(270deg);
   position: absolute;
   top: unset;
-  left: 120px;
+  left: calc(100vw + 0px);
   height: calc(100vw - 120px);
-  bottom: 61px;
+  bottom: 0px;
   transform-origin: bottom left;
   z-index: 1;
   transition-duration: .30s;
@@ -49,7 +50,7 @@
 }
 .container-1eFtFS:has(.sidebar-1tnWFu:hover) .guilds-2JjMmN {
   transition-delay: 0s !important;
-  left: var(--popout-width) !important;
+  left: calc(100vw + var(--sidebar-width) - 120px) !important;
 }
 #app-mount .guilds-2JjMmN .svg-2ifYOU,
 #app-mount .guilds-2JjMmN .wrapper-2PSQCG,
@@ -148,7 +149,7 @@
 }
 #app-mount .guilds-2JjMmN [class*=listItem]:not([class*=listItemWrapper]) {
   width: var(--serverlist-size);
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   margin: 0 10px;
   position: unset;
 }
