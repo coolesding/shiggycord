@@ -1,27 +1,25 @@
+.homeIcon-r0w4ny {
+	display: none;
+}
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
 	content: "";
 	border-radius: 50%;
 	position: absolute;
-	width: 32px;
-	height: 32px;
+	width: calc(32px/var(--oneko-resolution));
+	height: calc(32px/var(--oneko-resolution));
+	transform: scale(var(--oneko-resolution));
 	transition: 0.2s ease;
 	opacity: 0.7;
 	image-rendering: pixelated;
 	background-image: var(--oneko-skin);
 	animation: sleep, init; 
-	animation-duration: var(--oneko-sleep-time), var(--oneko-wakeup-time);
+	animation-duration: var(--oneko-sleep-duration), var(--oneko-wakeup-duration);
 	animation-iteration-count: infinite, 1;
-	animation-delay: var(--oneko-wakeup-time), 0s;
-}
-.homeIcon-r0w4ny {
-	display: none;
-}
-#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::after {
-	animation: reverse wakeup 1s 1s;
+	animation-delay: var(--oneko-wakeup-duration), 0s;
 }
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n:hover::before,
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n.selected-1Drb7Z::before {
-	animation: var(--oneko-wakeup-time) 1 forwards wakeup;
+	animation: var(--oneko-wakeup-duration) 1 forwards wakeup;
 	opacity: 1;
 }
 @keyframes sleep {
