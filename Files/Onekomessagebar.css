@@ -1,6 +1,6 @@
 .channelTextArea-1FufC0::before {
 	top: var(--oneko-position-top);
-	right: var(--oneko-position-right);
+	left: var(--oneko-position-left);
 	z-index: var(--oneko-z-index);
 	content: "";
 	width: calc(32px/var(--oneko-resolution));
