@@ -24,6 +24,6 @@
 .contents-2MsGLg:has(svg[fill="var(--twitch"]) .avatar-2e8lTP, .layout-1qmrhw:has(svg[fill="var(--twitch"]) .avatar-6qzftW {
   box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-streaming-color)
 }
-.contents-2MsGLg:has(span[class*=botTag-][class*=botTagRegular-]) .avatar-2e8lTP, .layout-1qmrhw:has(span[class*=botTag-][class*=botTagRegular-]:not([data-tag="staff"],[data-tag="owner"],[data-tag="admin"],[data-tag="mod"],[data-tag="vc mod"])) .avatar-6qzftW {
+.contents-2MsGLg:has(span[class*=botTag-][class*=botTagRegular-]:not([data-tag="staff"],[data-tag="owner"],[data-tag="admin"],[data-tag="mod"],[data-tag="vc mod") .avatar-2e8lTP, .layout-1qmrhw:has(span[class*=botTag-][class*=botTagRegular-]:not([data-tag="staff"],[data-tag="owner"],[data-tag="admin"],[data-tag="mod"],[data-tag="vc mod"])) .avatar-6qzftW {
   box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-bot-color)
 }
