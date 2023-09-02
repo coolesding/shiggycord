@@ -1,32 +1,15 @@
-.platform-win .typeWindows-2-g3UY {
-    height: 0px;
-    margin-top: 0;
-    position: absolute;
-    top: 31px;
-    right: 0;
-    width: 9%;
-    background: rgba(254, 254, 254, 0);
-  }
-  .platform-win .winButtonClose-3Q8ZH5 {
-    border-top-right-radius: 1;
-    border-bottom-right-radius: 0;
-  }
-  .platform-win .winButton-3UMjdg {
-    position: relative;
-    top: -32px;
-    right: 0px;
-    height: 46px;
-    width: 40px;
-  }
-  .platform-win .winButton-3UMjdg:not(.winButtonClose-3Q8ZH5):hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  .platform-win .container-ZMc96U {
-    padding-right: 125px;
-  }
-  .platform-win .wordmarkWindows-2dq6rw {
-    display: none;
-  }
-  .chat-2ZfjoI > section {
-    z-index: 0;
-  }
+.typeWindows-2-g3UY {
+  height: 0px;
+  margin: 0px;
+}
+.typeWindows-2-g3UY>:first-child {
+  display: none;
+}
+.winButton-3UMjdg  {
+  height: 52px;
+  width: 32px;
+  margin-left: 10px;
+}
+[aria-label="Channel header"] {
+  width: calc(100% - 240px);
+}
