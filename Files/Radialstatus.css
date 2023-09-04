@@ -1,6 +1,7 @@
-.contents-2MsGLg .vc-platform-indicator>svg, .pointerEvents-2KjWnj, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatar-3QF_VA>svg>circle, .avatarHintInner-2HUAWj {
+.contents-2MsGLg .vc-platform-indicator>svg, .pointerEvents-2KjWnj, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatar-3QF_VA>svg>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj {
   display: none
 }
+
 /* Chat, Memberlist, DMs and Friendlist */
 .userInfo-2WpsYG {overflow: visible;}
 .avatar-2e8lTP, .avatar-6qzftW, .avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), .avatar-2MSPKk {
@@ -54,6 +55,7 @@
 .userPopoutInner-nv9Y92:has([data-tag*="bot"])>.avatarWrapper-eenWra>.avatarHoverTarget-1zzfRL {
   box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-bot-color) !important
 }
+
 /* Full Profile Pane */
 .avatar-3QF_VA img {
   border-radius: var(--rs-large-roundness);
