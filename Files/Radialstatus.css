@@ -1,4 +1,6 @@
-.contents-2MsGLg .vc-platform-indicator>svg, .pointerEvents-2KjWnj, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatar-3QF_VA>svg>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj {
+.pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHintInner-2HUAWj {
+  display: var(--rs-show-platformindicators, block);}
+.cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect {
   display: none
 }
 
