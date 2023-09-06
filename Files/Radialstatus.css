@@ -1,9 +1,8 @@
 .pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHoverTarget-1zzfRL>div>svg>circle {
   display: var(--rs-show-platformindicators, block);}
-.cursorDefault-2M8ZNp, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj{
+.cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj{
   display: none
 }
-
 /* Chat, Memberlist, DMs and Friendlist */
 .userInfo-2WpsYG {overflow: visible;}
 .avatar-2e8lTP, .avatar-6qzftW, .avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), .avatar-2MSPKk {
@@ -38,6 +37,10 @@
 /* Popout and DM-Sidebar */
 .avatarHoverTarget-1zzfRL img {
   border-radius: calc(var(--rs-medium-roundness)/2);
+}
+.avatarWrapper-eenWra {
+  background: var(--rs-avatar-background);
+  box-shadow: 0px 0px 0px var(--rs-medium-backgroundsize) var(--rs-medium-backgroundcolor);
 }
 .avatarHoverTarget-1zzfRL {
   scale: var(--rs-medium-size);
