@@ -1,6 +1,6 @@
 .pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHoverTarget-1zzfRL>div>svg>circle {
   display: var(--rs-show-platformindicators, block);}
-.cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj{
+.cursorDefault-2M8ZNp, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj{
   display: none
 }
 
