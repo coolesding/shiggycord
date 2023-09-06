@@ -37,7 +37,7 @@
 
 /* Popout and DM-Sidebar */
 .avatarHoverTarget-1zzfRL img {
-  border-radius: var(--rs-medium-roundness);
+  border-radius: calc(var(--rs-medium-roundness)/2);
 }
 .avatarHoverTarget-1zzfRL {
   scale: var(--rs-medium-size);
@@ -60,7 +60,7 @@
 
 /* Full Profile Pane */
 .avatar-3QF_VA img {
-  border-radius: var(--rs-large-roundness);
+  border-radius: calc(var(--rs-large-roundness)/2);
 }
 .avatar-3QF_VA {
   scale: var(--rs-large-size);
