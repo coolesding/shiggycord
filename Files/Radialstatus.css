@@ -77,3 +77,7 @@
 .avatar-3QF_VA:is([aria-label*="Do Not Disturb"]) {
   box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-dnd-color) !important
 }
+/* Make a variable background for the people that want it (thanks aoi) */
+.avatarHoverTarget-1zzfRL, .avatar-3QF_VA {
+    background: var(--rs-avatar-background);
+}
