@@ -14,7 +14,7 @@
 .baseLayer-W6S8cY {
   opacity: 1 !important;
   transform: scale(1) !important;
-	z-index: 0;
+  z-index: 0;
 }
 .layers-OrUESM:has(.layer-86YKbF:not(.baseLayer-W6S8cY))>.baseLayer-W6S8cY:after {
   display: block;
@@ -22,7 +22,7 @@
   height: 100vh;
   width: 100vw;
   content: "";
-  background: var(--settings-outside-background);
+  background: var(--settings-outer-background);
   z-index: 100;
 }
 /* small adjustments */
@@ -56,16 +56,16 @@
 }
 /* close when clicking outside */
 .tools-kIrEGr, .closeButton-PCZcma {
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
   border: none;
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
   cursor: default;
   opacity: 0;
 }
 .toolsContainer-25FL6V {
-	z-index: -1;
+  z-index: -1;
 }
