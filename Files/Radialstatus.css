@@ -1,11 +1,14 @@
-.pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHoverTarget-1zzfRL>div>svg>circle {
+.mask-1y0tyc>rect, .pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHoverTarget-1zzfRL>div>svg>circle {
   display: var(--rs-show-platformindicators, block);}
 .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj{
   display: none
 }
+/* Fix cut off glow */
+.userInfo-2WpsYG, .link-39sEB3, .peopleListItem-u6dGxF { 
+  overflow: visible;
+}
 /* Chat, Memberlist, DMs and Friendlist */
-.userInfo-2WpsYG {overflow: visible;}
-.avatar-2e8lTP, .avatar-6qzftW, .avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), .avatar-2MSPKk {
+:not(.vc-rdb-review)>.avatar-2e8lTP, :not(.wrappedLayout-31F4iI)>.avatar-6qzftW, .avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), .avatar-2MSPKk {
   scale: var(--rs-small-size);
   margin-top: -0.25em;
   border: var(--rs-small-spacing) solid transparent;
@@ -18,24 +21,20 @@
   z-index: 0;
   border-radius: calc(var(--rs-small-roundness)/2);
 }
-.contents-2MsGLg:has(svg[fill="var(--green-360"])>.avatar-2e8lTP, .avatar-6qzftW:has([aria-label*="Online"]), .avatar-1HDIsL:has([aria-label*="Online"]), .avatar-2MSPKk:is([aria-label*="Online"])  {
+.contents-2MsGLg:has(svg[fill="var(--green-360"])>.avatar-2e8lTP, .memberInner--L4X2b:has(svg[fill="var(--green-360"])>.avatar-6qzftW, .layout-1LjVue:has(svg[fill="var(--green-360"])>.avatar-1HDIsL, .avatar-2MSPKk:is([aria-label*="Online"])  {
   box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-online-color)
 }
-.contents-2MsGLg:has(svg[fill="var(--yellow-300"])>.avatar-2e8lTP, .avatar-6qzftW:has([aria-label*="Idle"]), .avatar-1HDIsL:has([aria-label*="Idle"]), .avatar-2MSPKk:is([aria-label*="Idle"])  {
+.contents-2MsGLg:has(svg[fill="var(--yellow-300"])>.avatar-2e8lTP, .memberInner--L4X2b:has(svg[fill="var(--yellow-300"])>.avatar-6qzftW, .layout-1LjVue:has(svg[fill="var(--yellow-300"])>.avatar-1HDIsL, .avatar-2MSPKk:is([aria-label*="Idle"])  {
   box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-idle-color) !important
 }
-.contents-2MsGLg:has(svg[fill="var(--red-400"])>.avatar-2e8lTP, .avatar-6qzftW:has([aria-label*="Do Not Disturb"]), .avatar-1HDIsL:has([aria-label*="Do Not Disturb"]), .avatar-2MSPKk:is([aria-label*="Do Not Disturb"])  {
+.contents-2MsGLg:has(svg[fill="var(--red-400"])>.avatar-2e8lTP, .memberInner--L4X2b:has(svg[fill="var(--red-400"])>.avatar-6qzftW, .layout-1LjVue:has(svg[fill="var(--red-400"])>.avatar-1HDIsL, .avatar-2MSPKk:is([aria-label*="Do Not Disturb"])  {
   box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-dnd-color) !important
-}
-.contents-2MsGLg:has(svg[fill="var(--twitch"])>.avatar-2e8lTP, .layout-1qmrhw:has(svg[fill="var(--twitch"]) .avatar-6qzftW {
-  box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-streaming-color)
 }
 .contents-2MsGLg:has([data-tag*="bot"])>.avatar-2e8lTP, .layout-1qmrhw:has([data-tag*="bot"])>:first-child  {
   box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-bot-color)
 }
-
 /* Popout and DM-Sidebar */
-.avatarHoverTarget-1zzfRL img {
+.avatarHoverTarget-1zzfRL>div>svg>foreignObject>div>img {
   border-radius: calc(var(--rs-medium-roundness)/2);
 }
 .avatarWrapper-eenWra {
@@ -48,21 +47,20 @@
   box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-offline-color);
   border-radius: calc(var(--rs-medium-roundness)/2);
 }
-.avatarHoverTarget-1zzfRL:has([aria-label*="Online"]) {
+.userPopoutInner-nv9Y92:has(svg[fill="var(--green-360"])>.avatarWrapper-eenWra>.avatarHoverTarget-1zzfRL {
   box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-online-color)
 }
-.avatarHoverTarget-1zzfRL:has([aria-label*="Idle"]) {
+.userPopoutInner-nv9Y92:has(svg[fill="var(--yellow-300"])>.avatarWrapper-eenWra>.avatarHoverTarget-1zzfRL {
   box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-idle-color) !important
 }
-.avatarHoverTarget-1zzfRL:has([aria-label*="Do Not Disturb"]) {
+.userPopoutInner-nv9Y92:has(svg[fill="var(--red-400"])>.avatarWrapper-eenWra>.avatarHoverTarget-1zzfRL {
   box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-dnd-color) !important
 }
 .userPopoutInner-nv9Y92:has([data-tag*="bot"])>.avatarWrapper-eenWra>.avatarHoverTarget-1zzfRL {
   box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-bot-color) !important
 }
-
 /* Full Profile Pane */
-.avatar-3QF_VA img {
+.avatar-3QF_VA>svg>foreignObject>div>img {
   border-radius: calc(var(--rs-large-roundness)/2);
 }
 .avatar-3QF_VA {
@@ -71,16 +69,16 @@
   box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-offline-color);
   border-radius: calc(var(--rs-large-roundness)/2);
 }
-.avatar-3QF_VA:is([aria-label*="Online"]) {
+.header-S26rhB:has(svg[fill="var(--green-360"])>:first-child>.avatar-3QF_VA {
   box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-online-color)
 }
-.avatar-3QF_VA:is([aria-label*="Idle"]) {
+.header-S26rhB:has(svg[fill="var(--yellow-300"])>:first-child>.avatar-3QF_VA {
   box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-idle-color) !important
 }
-.avatar-3QF_VA:is([aria-label*="Do Not Disturb"]) {
+.header-S26rhB:has(svg[fill="var(--red-400"])>:first-child>.avatar-3QF_VA {
   box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-dnd-color) !important
 }
 /* Make a variable background for the people that want it (thanks aoi) */
 .avatarHoverTarget-1zzfRL, .avatar-3QF_VA {
-    background: var(--rs-avatar-background);
+  background: var(--rs-avatar-background);
 }
