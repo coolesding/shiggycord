@@ -1,0 +1,100 @@
+/*the beginning of the end*/
+:root {
+  --main-background: url(https://shiggy.fun/api/v2/random);
+  --main-position: center;
+  --main-size: cover;
+  --main-repeat: no-repeat;
+  --main-brightness: 40%;
+  --serverlist-background: transparent;
+  --serverlist-position: center;
+  --serverlist-size: cover;
+  --serverlist-repeat: no-repeat;
+  --serverlist-brightness: 40%;
+  --list-background: transparent;
+  --list-position: ;
+  --list-size: cover;
+  --list-repeat: no-repeat;
+  --list-brightness: 40%;
+  --chat-background: transparent;
+  --chat-position: center;
+  --chat-size: cover;
+  --chat-repeat: no-repeat;
+  --chat-brightness: 35%;
+  --members-background: transparent;
+  --members-position: center;
+  --members-size: cover;
+  --members-repeat: no-repeat;
+  --members-brightness: 40%;
+}
+/*hide all backgrounds*/
+.guilds-2JjMmN, .sidebar-1tnWFu, .chat-2ZfjoI, .container-2o3qEW, .privateChannels-oVe7HL>.scroller-WSmht3, .privateChannels-oVe7HL, .chatContent-3KubbW, .chat-2ZfjoI>.title-31SJ6t, .userPanelOuter-XfFELn, .userPanelInner-3KPel3, .sidebar-1tnWFu>.container-1NXEtd, .members-3WRCEx, .container-2o3qEW, .chat-2ZfjoI, .member-2gU6Ar, .container-q97qHp, .panels-3wFtMD, .panels-3wFtMD>#vc-spotify-player, .panels-3wFtMD>.container-YkUktl{
+  background: transparent;
+}
+/*app*/
+.baseLayer-W6S8cY:before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: var(--main-background);
+  background-position: var(--main-position);
+  background-size: var(--main-size);
+  background-repeat: var(--main-repeat);
+  filter: brightness(var(--main-brightness));
+}
+/*memberslist*/
+.container-2o3qEW:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--members-background);
+  background-position: var(--members-position);
+  background-size: var(--members-size);
+  background-repeat: var(--members-repeat);
+  filter: brightness(var(--members-brightness));
+}
+/*chat*/
+.chat-2ZfjoI:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--chat-background);
+  background-position: var(--chat-position);
+  background-size: var(--chat-size);
+  background-repeat: var(--chat-repeat);
+  filter: brightness(var(--chat-brightness));
+}
+/*channels/dms*/
+.sidebar-1tnWFu:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: inherit;
+  background: var(--list-background);
+  background-position: var(--list-position);
+  background-size: var(--list-size);
+  background-repeat: var(--list-repeat);
+  filter: brightness(var(--list-brightness));
+}
+/*serverlist*/
+.guilds-2JjMmN:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--serverlist-background);
+  background-position: var(--serverlist-position);
+  background-size: var(--serverlist-size);
+  background-repeat: var(--serverlist-repeat);
+  filter: brightness(var(--serverlist-brightness));
+}
+/*dont remember :trolley:*/
+.content-3AIQZv, .container-2RRFHK {
+  display: none;
+}
+/*weird rounding (badumts) error made by discord*/
+.content-1SgpWY>.sidebar-1tnWFu {
+  border-radius: 0px;
+}

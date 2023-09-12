@@ -1,3 +1,11 @@
+:root {
+  --serverlist-size: 41px;
+  --serverlist-spacing: 10px;
+  --serverlist-direction: column;
+  --serverlist-alignment: flex-start;
+  --serverlist-container: calc(var(--serverlist-size) + 20px);
+  --serverlist-width: 91.6vw;    
+}
 .container-YkUktl {
   background: transparent !important;
   padding-left: 4px;

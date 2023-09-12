@@ -1,3 +1,9 @@
+:root {
+  --settings-background: url(https://shiggy.fun/api/v2/random?a);
+  --settings-outer-background: rgba(0,0,0,0.4);
+  --settings-width: 90vw;
+  --settings-height: 90vh;
+}
 /* showing the window as it should be */
 .layer-86YKbF:not(.baseLayer-W6S8cY) {
   background: var(--settings-background);

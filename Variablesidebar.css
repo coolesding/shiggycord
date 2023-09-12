@@ -1,3 +1,8 @@
+:root {
+  --sidebar-width: 240px;
+  --status-width: 240px;
+  --sidebar-speed: .3s;
+}
 .container-YkUktl {
   pointer-events: all;
 }
