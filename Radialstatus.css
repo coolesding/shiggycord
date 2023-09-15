@@ -20,9 +20,9 @@
   --rs-medium-backgroundsize: 0px;
   --rs-large-size: 1;
   --rs-large-roundness: 100%;
-  --rs-large-thickness: 2px;
+  --rs-large-thickness: 2.5px;
   --rs-large-glow: 0px;
-  --rs-large-spacing: 0px;
+  --rs-large-spacing: 4px;
 }
 .mask-1y0tyc>rect, .pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHoverTarget-1zzfRL>div>svg>circle {
   display: var(--rs-show-platformindicators, block);}
