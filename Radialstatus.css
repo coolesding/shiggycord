@@ -8,19 +8,19 @@
   --rs-show-platformindicators: none;
   --rs-small-size: 0.85;
   --rs-small-roundness: 100%;
-  --rs-small-thickness: 4px;
+  --rs-small-thickness: 0px;
   --rs-small-glow: 0px;
   --rs-small-spacing: 0px;
   --rs-medium-size: 1;
   --rs-medium-roundness: 100%;
-  --rs-medium-thickness: 2.5px;
+  --rs-medium-thickness: 1.5px;
   --rs-medium-glow: 0px;
   --rs-medium-spacing: 4px;
   --rs-medium-backgroundcolor: none;
   --rs-medium-backgroundsize: 0px;
   --rs-large-size: 1;
   --rs-large-roundness: 100%;
-  --rs-large-thickness: 2.5px;
+  --rs-large-thickness: 0px;
   --rs-large-glow: 0px;
   --rs-large-spacing: 4px;
 }
