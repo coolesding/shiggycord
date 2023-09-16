@@ -1,2 +1,5 @@
-# Version 2 of the shiggycord theme
-very work in progress, all included files are either altered css snippets from others on the vencord discord or completely made by me. i will be trying to make everything work independently, with only the variables required.
+# An Independent, made from scratch customizable theme defaulting to shiggycord
+This is shiggycord.
+just accept it,
+shiggy is best.
+visit shiggy.fun/api/v3/random
