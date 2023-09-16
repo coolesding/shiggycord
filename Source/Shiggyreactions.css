@@ -1,0 +1,78 @@
+@keyframes super-imitation-enabler {
+    from { --_superen0: unset;--_superen1: unset;--_superen2: unset }
+}
+@keyframes super-imitation-bg {
+    from, to { background: url(https://cdn.discordapp.com/attachments/723196694484877342/1128760606892232904/comet.png) }
+    from { background-position: 0 0% }
+    to { background-position: 0 100.34% }
+}
+
+/* manual labour go brrr */
+@keyframes super-imitation {
+    from, 85% {
+        offset-path: path("m20,32c-2.46944,4.21445 -6.42746,5.16816 -10.6006,7.02289c-4.17315,1.85474 -12.58709,3.48727 -19.7083,3.34765c-7.12121,-0.13962 -14.47604,-1.97154 -19.26743,-3.67171c-4.79139,-1.70018 -9.1191,-4.32771 -11.90119,-6.64613c-2.7821,-2.31841 -6.2957,-7.4154 -7.54714,-10.60061c-1.25144,-3.18521 -1.30059,-14.65694 0.24502,-18.21185c1.54561,-3.5549 4.36546,-6.73658 6.99299,-8.74587c2.62754,-2.0093 5.07417,-2.76715 8.01083,-3.07628c2.93666,-0.30912 10.32747,0.21689 12.85491,0.75786c2.52744,0.54097 12.1634,5.94204 16.55626,10.20398c4.39286,4.26194 13.49268,11.00293 15.12875,12.05281c3.27213,2.09975 7.88261,4.94595 13.29224,5.71875c5.40964,0.77281 14.37418,2.7821 19.47469,0.61825c5.10051,-2.16386 11.9012,-6.80069 13.75593,-9.27366c1.85473,-2.47298 7.41893,-15.76522 7.72805,-19.16557c0.30912,-3.40034 0.30912,-10.04646 -1.23649,-11.90119c-1.54561,-1.85474 -4.54557,-6.70236 -9.34564,-8.66683c-4.80007,-1.96447 -9.89544,-3.46798 -13.5522,-2.96301c-3.65677,0.50498 -5.86191,0.91596 -8.69671,2.43522c-2.8348,1.51926 -6.73658,3.47586 -9.36412,6.8762c-2.62753,3.40034 -12.51944,21.48398 -14.52873,27.97554");
+    }
+
+    from { transform: scale(20%) }
+    85.1% {
+        transform: scale(100%);
+        offset-path: none
+    }
+
+    6%  { offset-distance: 0% }
+    15% { offset-distance: 13% }
+    27% { offset-distance: 30% }
+    40% { offset-distance: 40% }
+    50% { offset-distance: 52% }
+    57% { offset-distance: 70% }
+    63% { offset-distance: 80% }
+    72% { offset-distance: 85% }
+    85% { offset-distance: 100% }
+}
+
+.reactions-3ryImn>div {
+    --_superen0: shake-2By5IS;
+    --_superen1: super-imitation-bg;
+    --_superen2: super-imitation;
+}
+
+.reactions-3ryImn>div:hover {
+    animation: super-imitation-enabler 1ms step-end 1;
+}
+
+.reactionInner-YJjOtT:is([aria-label*="shiggy"]):not([aria-label*="super"])>div:not([class], [style]):before {
+    position: absolute;
+    content: '';
+    width: 175px;
+    height: 175px;
+    left: -76px;
+    top: -74px;
+    opacity: 1;
+    pointer-events: none;
+    animation: var(--_superen1) 5s steps(300) 1;
+}
+
+.reactionInner-YJjOtT:is([aria-label*="shiggy"]):not([aria-label*="super"]) {
+    animation: var(--_superen0) .5s;
+}
+
+.reactionInner-YJjOtT:is([aria-label*="shiggy"]):not([aria-label*="super"])>div:not([class]) .emoji {
+    animation: var(--_superen2) 2.5s linear 1;
+}
+
+.reactionInner-YJjOtT:is([aria-label*="shiggy"]):not([aria-label*="super"]):after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0.5rem;
+    z-index: -1;
+    opacity: .35;
+    box-shadow: var(--interactive-normal) 0px 0px 16px;
+}
+
+.reactionMe-1PwQAc .reactionInner-YJjOtT:is([aria-label*="shiggy"]):not([aria-label*="super"]):after {
+    box-shadow: var(--brand-experiment) 0px 0px 16px;
+}

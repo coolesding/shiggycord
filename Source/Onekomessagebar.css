@@ -1,0 +1,35 @@
+:root {
+	--onekomessagebar-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162439694205088/default.png    );
+    --onekomessagebar-wakeup-duration: 2s;
+    --onekomessagebar-sleep-duration: 2s;
+    --onekomessagebar-hovered-animation: scratchdown;
+    --onekomessagebar-hovered-duration: 0.3s;
+    --onekomessagebar-focused-animation: alert;
+    --onekomessagebar-focused-duration: 0.3s;
+    --onekomessagebar-resolution: 1;
+    --onekomessagebar-position-top: -30px;
+    --onekomessagebar-position-left: 10px;
+    --onekomessagebar-z-index: 2;
+}
+.channelTextArea-1FufC0::before {
+	top: var(--onekomessagebar-position-top);
+	left: var(--onekomessagebar-position-left);
+	z-index: var(--onekomessagebar-z-index);
+	content: "";
+	width: calc(32px/var(--onekomessagebar-resolution));
+	height: calc(32px/var(--onekomessagebar-resolution));
+	transform: scale(var(--onekomessagebar-resolution));
+  	position: absolute;
+	image-rendering: pixelated;
+	animation: sleep var(--onekomessagebar-sleep-duration) infinite;
+	background-image: var(--onekomessagebar-skin);
+}
+.channelTextArea-1FufC0:hover::before {
+	animation: var(--onekomessagebar-wakeup-duration) 1 forwards wakeup;
+}
+.channelTextArea-1FufC0:not(:hover)::before {
+	animation: var(--onekomessagebar-wakeup-duration) 1 forwards gotosleep, var(--onekomessagebar-sleep-duration) var(--onekomessagebar-wakeup-duration) infinite sleep;
+}
+.channelTextArea-1FufC0:has(.editor-H2NA06:focus)::before {
+	animation: var(--onekomessagebar-wakeup-duration) 1 forwards wakeup, var(--onekomessagebar-focused-duration) var(--onekomessagebar-wakeup-duration) infinite var(--onekomessagebar-focused-animation);
+}

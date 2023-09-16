@@ -1,0 +1,15 @@
+.typeWindows-2-g3UY {
+  height: 0px;
+  margin: 0px;
+}
+.typeWindows-2-g3UY>:first-child {
+  display: none;
+}
+.winButton-3UMjdg  {
+  height: 52px;
+  width: 32px;
+  margin-left: 10px;
+}
+[aria-label="Channel header"] {
+  width: calc(100% - 240px);
+}

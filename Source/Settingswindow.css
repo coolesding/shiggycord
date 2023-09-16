@@ -1,0 +1,77 @@
+:root {
+  --settings-background: url(https://shiggy.fun/api/v2/random?a);
+  --settings-outer-background: rgba(0,0,0,0.4);
+  --settings-width: 90vw;
+  --settings-height: 90vh;
+}
+/* showing the window as it should be */
+.layer-86YKbF:not(.baseLayer-W6S8cY) {
+  background: var(--settings-background);
+  background-position: center;
+  background-size: cover;
+  height: var(--settings-height);
+  width: var(--settings-width);
+  left: calc((100vw - var(--settings-width))/2);
+  top: calc((100vh - var(--settings-height))/2 - var(--titlebar-active, 22px));
+  padding-top: 0px;
+  border-radius: 1em;
+  z-index: 1;
+}
+.baseLayer-W6S8cY {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  z-index: 0;
+}
+.layers-OrUESM:has(.layer-86YKbF:not(.baseLayer-W6S8cY))>.baseLayer-W6S8cY:after {
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  content: "";
+  background: var(--settings-outer-background);
+  z-index: 100;
+}
+/* small adjustments */
+.standardSidebarView-E9Pc3j, .contentRegion-3HkfJJ  {
+  background: transparent;
+}
+.sidebarRegionScroller-FXiQOh, .contentRegionScroller-2_GT_N {
+  background: #00000069;
+}
+.sidebarRegionScroller-FXiQOh::-webkit-scrollbar, .contentRegionScroller-2_GT_N::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-nqHbhN {
+  padding-top: 1em;
+}
+.standardSidebarView-E9Pc3j {
+  top: 0px !important;
+}
+.sidebarRegion-1VBisG {
+  max-width: fit-content !important;
+}
+.contentColumn-1C7as6 {
+  max-width: unset;
+}
+.side-1lrxIh {
+  align-items: center;
+}
+.side-1lrxIh>div {
+  text-shadow: black 0 0 2px;
+  color: white;
+}
+/* close when clicking outside */
+.tools-kIrEGr, .closeButton-PCZcma {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  cursor: default;
+  opacity: 0;
+}
+.toolsContainer-25FL6V {
+  z-index: -1;
+}

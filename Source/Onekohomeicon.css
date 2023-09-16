@@ -1,0 +1,39 @@
+:root {
+--onekohomeicon-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162439694205088/default.png);
+--onekohomeicon-wakeup-duration: 2s;
+--onekohomeicon-sleep-duration: 2s;
+--onekohomeicon-hovered-animation: scratchdown;
+--onekohomeicon-hovered-duration: 0.3s;
+--onekohomeicon-focused-animation: alert;
+--onekohomeicon-focused-duration: 0.3s;
+--onekohomeicon-resolution: 1;}
+.homeIcon-r0w4ny {
+	display: none;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	width: calc(32px/var(--onekohomeicon-resolution));
+	height: calc(32px/var(--onekohomeicon-resolution));
+	transform: scale(var(--onekohomeicon-resolution));
+	transition: 0.2s ease;
+	opacity: 0.7;
+	image-rendering: pixelated;
+	background-image: var(--onekohomeicon-skin);
+	animation: sleep infinite;	
+  animation-duration: var(--onekohomeicon-sleep-duration), var(--onekohomeicon-wakeup-duration);
+	animation-delay: var(--onekohomeicon-wakeup-duration), 0s;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n:hover::before {
+	animation: var(--onekohomeicon-wakeup-duration) 1 forwards wakeup, var(--onekohomeicon-hovered-duration) var(--onekohomeicon-wakeup-duration) infinite var(--onekohomeicon-hovered-animation);
+	opacity: 1;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n:not(:hover)::before {
+	animation: var(--onekohomeicon-wakeup-duration) 1 forwards gotosleep, var(--onekohomeicon-sleep-duration) var(--onekohomeicon-wakeup-duration) infinite sleep;
+	opacity: 1;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n.selected-1Drb7Z:not(:hover):before {
+	animation: var(--onekohomeicon-wakeup-duration) 1 forwards wakeup, var(--onekohomeicon-focused-duration) var(--onekohomeicon-wakeup-duration) infinite var(--onekohomeicon-focused-animation);
+	opacity: 1;
+}
