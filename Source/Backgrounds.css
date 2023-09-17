@@ -1,0 +1,116 @@
+:root { /* Background */
+    --background-main: url(https://shiggy.fun/api/v3/random?main);
+    --background-main-position: center;
+    --background-main-size: cover;
+    --background-main-repeat: no-repeat;
+    --background-main-brightness: 40%;
+    --background-serverlist: none;
+    --background-serverlist-position: center;
+    --background-serverlist-size: cover;
+    --background-serverlist-repeat: no-repeat;
+    --background-serverlist-brightness: 40%;
+    --background-list: none;
+    --background-list-position: center;
+    --background-list-size: cover;
+    --background-list-repeat: no-repeat;
+    --background-list-brightness: 40%;
+    --background-center: none;
+    --background-center-position: center;
+    --background-center-size: cover;
+    --background-center-repeat: no-repeat;
+    --background-center-brightness: 35%;
+    --background-sidepanel: none;
+    --background-sidepanel-position: center;
+    --background-sidepanel-size: cover;
+    --background-sidepanel-repeat: no-repeat;
+    --background-sidepanel-brightness: 40%;
+}
+.form-3gdLxP:before, .children-3xh0VB:after, .content-3AIQZv, .container-2RRFHK{
+    display: none;
+}
+  .pageWrapper-2PwDoS, /*Discover Servers*/
+  .channelRow-4X_3fi, /*Browse Channel Page Channels*/
+  .header-elFGge, /*Top Header Bar*/
+  .mainTableContainer-3Nxvkd, /*Browsechanenl/Members Page*/
+  .content-1jQy2l, /*Browse Channel Page*/
+  .container-1oAagU, 
+  .container-ZMc96U, /*Also Top Header*/
+  .container-2cd8Mz, 
+  .nowPlayingColumn-1eCBCN,
+  .guilds-2JjMmN, 
+  .sidebar-1tnWFu, 
+  .chat-2ZfjoI, 
+  .container-2o3qEW, 
+  .scroller-WSmht3, 
+  .privateChannels-oVe7HL, 
+  .chatContent-3KubbW, 
+  .title-31SJ6t, 
+  .userPanelOuter-XfFELn, 
+  .userPanelInner-3KPel3, 
+  .container-1NXEtd, 
+  .members-3WRCEx, 
+  .member-2gU6Ar, 
+  .container-q97qHp, 
+  .panels-3wFtMD, 
+  #vc-spotify-player, 
+  .container-YkUktl{
+    background: transparent !important;
+}
+  .baseLayer-W6S8cY:before {
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-main);
+    background-position: var(--background-main-position);
+    background-size: var(--background-main-size);
+    background-repeat: var(--background-main-repeat);
+    filter: brightness(var(--background-main-brightness));
+}
+  .nowPlayingColumn-1eCBCN:before, .container-2o3qEW:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--background-sidepanel);
+    background-position: var(--background-sidepanel-position);
+    background-size: var(--background-sidepanel-size);
+    background-repeat: var(--background-sidepanel-repeat);
+    filter: brightness(var(--background-sidepanel-brightness));
+}
+  .chat-2ZfjoI:before, .container-2cd8Mz:before, .content-1SgpWY>.pageWrapper-2PwDoS:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--background-center);
+    background-position: var(--background-center-position);
+    background-size: var(--background-center-size);
+    background-repeat: var(--background-center-repeat);
+    filter: brightness(var(--background-center-brightness));
+}
+  .sidebar-1tnWFu:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: inherit;
+    background: var(--background-list);
+    background-position: var(--background-list-position);
+    background-size: var(--background-list-size);
+    background-repeat: var(--background-list-repeat);
+    filter: brightness(var(--background-list-brightness));
+}
+  .guilds-2JjMmN:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--background-serverlist);
+    background-position: var(--background-serverlist-position);
+    background-size: var(--background-serverlist-size);
+    background-repeat: var(--background-serverlist-repeat);
+    filter: brightness(var(--background-serverlist-brightness));
+}
+  .content-1SgpWY>.sidebar-1tnWFu {
+    border-radius: 0px;
+}

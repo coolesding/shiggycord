@@ -1,0 +1,64 @@
+/* Imports, use comments to deactivate by opening with /* and closing with */
+/* If this was a link it would be deactivated */
+
+/* Main Theme */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Shiggycord.css);
+
+/* Radialstatus Snippet, use with "MoreUserTags" and "PlatformIndicators" active on all settings */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Radialstatus.css);
+
+/* Make the Settings look like an independent Window */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Settingswindow.css);
+
+/* Allows you to use a custom Background*/
+@import url(https://coolesding.github.io/shiggycord/Deploy/Backgrounds.css);
+
+/* Makes reactions with :shiggy: look like Superreactions */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Shiggyreactions.css);
+
+/* Dependency for Oneko snippets, always have this active if at least one of the Oneko snippets is on */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Onekoanimations.css);
+
+/* An Oneko for your Homeicon! */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Onekohomeicon.css);
+/* An Oneko for your Messagebar*/
+@import url(https://coolesding.github.io/shiggycord/Deploy/Onekomessagebar.css);
+
+/* Removes the top bar in discord and moves down the windows action buttons [Only tested for Windows] */
+@import url(https://coolesding.github.io/shiggycord/Deploy/Titlebar.css);
+
+/* Here are the variables to change things like images in Backgrounds or the Skin for Oneko */
+/* To organize yourself better while changing variables, click the little arrow to the left of :root to hide a section of variables */
+/* If you want more Variables, replace everything below this line with the contents of https://coolesding.github.io/shiggycord/Advancedvariables.css*/
+:root { /* Main */
+    --main-primary-colour: salmon;
+    --main-primary-colour-transparency: 70%;
+    --main-border-thickness: 2px;}
+:root { /*SettingsWindow*/ 
+    --settings-background: url(https://shiggy.fun/api/v3/random?gdwag);
+    --settings-width: 90vw;
+    --settings-height: 90vh;}
+:root { /*Oneko*/ 
+    --onekohomeicon-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162510749896714/valentine.png);
+    --onekohomeicon-hovered-animation: alert;  /* animation while hovered */
+    --onekohomeicon-focused-animation: alert; 	/* animation while focused */
+    --onekomessagebar-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162510749896714/valentine.png);
+    --onekomessagebar-hovered-animation: scratchdown;  /* animation while hovered */
+    --onekomessagebar-focused-animation: scratchdown; 	/* animation while focused */
+    --onekomessagebar-position-top: -20px;  /* vertical position */
+    --onekomessagebar-position-left: 10px; /* horizontal position */}
+:root { /*Radialstatus*/
+    --rs-small-size: 0.85; /* default: 0.85 */
+    --rs-small-thickness: 2.5px; /* default: 2.5px */
+    --rs-small-spacing: 4px; /* default: 4px */
+    --rs-medium-size: 1; /* default: 1 */
+    --rs-medium-thickness: 2.5px; /* default: 2.5px */
+    --rs-medium-spacing: 4px; /* default: 4px */
+    --rs-large-size: 1; /* default: 1 */
+    --rs-large-thickness: 2.5px; /* default: 2.5px */
+    --rs-large-spacing: 4px; /* default: 4px */}
+:root { /* Backgrounds */
+    --background-main: url(https://shiggy.fun/api/v3/random?main);
+    --background-main-brightness: 40%;}
+
+    /* Paste your custom code below here */

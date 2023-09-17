@@ -1,43 +1,38 @@
 :root { /* Main */
-  --main-primary-colour: #fa8072;
-  --main-primary-colour-weight: 20%;
-  --border-colour: color-mix(in srgb, var(--background-main-primary-colour) 60%, white);
-  --border-thickness: 2px;
-  --border-glow: 4px;
-  --secondary-colour: #00000000;
-  --main-hover-difference: #F0F0F030;
-  --main-border-radius: 1em;}
-:root { /* Background */
-  --background-main: url(https://shiggy.fun/api/v3/random?main);
-  --background-main-position: center;
-  --background-main-size: cover;
-  --background-main-repeat: no-repeat;
-  --background-main-brightness: 40%;
-  --background-serverlist: transparent;
-  --background-serverlist-position: center;
-  --background-serverlist-size: cover;
-  --background-serverlist-repeat: no-repeat;
-  --background-serverlist-brightness: 40%;
-  --background-list: transparent;
-  --background-list-position: center;
-  --background-list-size: cover;
-  --background-list-repeat: no-repeat;
-  --background-list-brightness: 40%;
-  --background-center: transparent;
-  --background-center-position: center;
-  --background-center-size: cover;
-  --background-center-repeat: no-repeat;
-  --background-center-brightness: 35%;
-  --background-sidepanel: transparent;
-  --background-sidepanel-position: center;
-  --background-sidepanel-size: cover;
-  --background-sidepanel-repeat: no-repeat;
-  --background-sidepanel-brightness: 40%;}
+  --main-primary-colour: salmon;
+  --main-primary-colour-transparency: 70%;
+  --main-border-colour: var(--main-primary-colour);
+  --main-border-thickness: 2px;
+  --main-border-style: solid;
+  --main-hover-colour: color-mix(in srgb, var(--main-primary-colour) var(--main-hover-transparency), transparent);
+  --main-hover-transparency: 50%;
+  --main-roundness: 1em;
+  --main-icon-roundness: 100%;}
 :root { /*SettingsWindow*/ 
   --settings-background: url(https://shiggy.fun/api/v3/random?gdwag);
   --settings-outer-background: rgba(0,0,0,0.4);
   --settings-width: 90vw;
   --settings-height: 90vh;}
+:root { /*Oneko*/ 
+  --onekohomeicon-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162510749896714/valentine.png);
+  --onekohomeicon-wakeup-duration: 2s;		/* duration of wakeup and go to sleep animations*/
+  --onekohomeicon-sleep-duration: 1s;		/* duration of sleeping animation */
+  --onekohomeicon-hovered-animation: alert;  /* animation while hovered */
+  --onekohomeicon-hovered-duration: 0.3s;  /* duration of hovered animation */
+  --onekohomeicon-focused-animation: alert; 	/* animation while focused */
+  --onekohomeicon-focused-duration: 0.3s;		/* duration of focused animation */
+  --onekohomeicon-resolution: 1;
+  --onekomessagebar-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162510749896714/valentine.png);
+  --onekomessagebar-wakeup-duration: 2s;		/* duration of wakeup and go to sleep animations*/
+  --onekomessagebar-sleep-duration: 2s;		/* duration of sleeping animation */
+  --onekomessagebar-hovered-animation: scratchdown;  /* animation while hovered */
+  --onekomessagebar-hovered-duration: 0.3s;  /* duration of hovered animation */
+  --onekomessagebar-focused-animation: scratchdown; 	/* animation while focused */
+  --onekomessagebar-focused-duration: 0.3s;		/* duration of focused animation */
+  --onekomessagebar-resolution: 1;
+  --onekomessagebar-position-top: -20px;  /* vertical position */
+  --onekomessagebar-position-left: 10px; /* horizontal position */
+  --onekomessagebar-z-index: 2;  /* change if unproperly overlapping */}
 :root { /*Radialstatus*/
   --rs-online-color: #43b581; /* default: #43b581 */
   --rs-idle-color: #faa61a; /* default: #faa61a */
@@ -63,34 +58,29 @@
   --rs-large-thickness: 8px; /* default: 2.5px */
   --rs-large-glow: 16px; /* default: 0px */
   --rs-large-spacing: 0px; /* default: 4px */}
-:root { /*Oneko*/ 
-    --onekohomeicon-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162510749896714/valentine.png);
-    --onekohomeicon-wakeup-duration: 2s;		/* duration of wakeup and go to sleep animations*/
-    --onekohomeicon-sleep-duration: 1s;		/* duration of sleeping animation */
-    --onekohomeicon-hovered-animation: alert;  /* animation while hovered */
-    --onekohomeicon-hovered-duration: 0.3s;  /* duration of hovered animation */
-    --onekohomeicon-focused-animation: alert; 	/* animation while focused */
-    --onekohomeicon-focused-duration: 0.3s;		/* duration of focused animation */
-    --onekohomeicon-resolution: 1;
-    --onekomessagebar-skin: url(https://cdn.discordapp.com/attachments/1142160576588566608/1142162510749896714/valentine.png);
-    --onekomessagebar-wakeup-duration: 2s;		/* duration of wakeup and go to sleep animations*/
-    --onekomessagebar-sleep-duration: 2s;		/* duration of sleeping animation */
-    --onekomessagebar-hovered-animation: scratchdown;  /* animation while hovered */
-    --onekomessagebar-hovered-duration: 0.3s;  /* duration of hovered animation */
-    --onekomessagebar-focused-animation: alert; 	/* animation while focused */
-    --onekomessagebar-focused-duration: 0.3s;		/* duration of focused animation */
-    --onekomessagebar-resolution: 1;
-    --onekomessagebar-position-top: -30px;  /* vertical position */
-    --onekomessagebar-position-left: 10px; /* horizontal position */
-    --onekomessagebar-z-index: 2;  /* change if unproperly overlapping */}
-:root { /*VariableSidebar*/
-  --background-serverlist-size: 41px;
-  --background-serverlist-spacing: 10px;
-  --background-serverlist-direction: column;
-  --background-serverlist-alignment: flex-start;
-  --background-serverlist-container: calc(var(--background-serverlist-size) + 20px);
-  --background-serverlist-width: 91.6vw;
-  --sidebar-width: 240px;
-  --status-width: 240px;
-  --sidebar-speed: .3s;}
-
+:root { /* Background */
+  --background-main: url(https://shiggy.fun/api/v3/random?main);
+  --background-main-position: center;
+  --background-main-size: cover;
+  --background-main-repeat: no-repeat;
+  --background-main-brightness: 40%;
+  --background-serverlist: none;
+  --background-serverlist-position: center;
+  --background-serverlist-size: cover;
+  --background-serverlist-repeat: no-repeat;
+  --background-serverlist-brightness: 40%;
+  --background-list: none;
+  --background-list-position: center;
+  --background-list-size: cover;
+  --background-list-repeat: no-repeat;
+  --background-list-brightness: 40%;
+  --background-center: none;
+  --background-center-position: center;
+  --background-center-size: cover;
+  --background-center-repeat: no-repeat;
+  --background-center-brightness: 35%;
+  --background-sidepanel: none;
+  --background-sidepanel-position: center;
+  --background-sidepanel-size: cover;
+  --background-sidepanel-repeat: no-repeat;
+  --background-sidepanel-brightness: 40%;}
