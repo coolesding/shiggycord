@@ -1,100 +1,103 @@
 /*the beginning of the end*/
-:root {
-  --main-background: url(https://shiggy.fun/api/v2/random);
-  --main-position: center;
-  --main-size: cover;
-  --main-repeat: no-repeat;
-  --main-brightness: 40%;
-  --serverlist-background: transparent;
-  --serverlist-position: center;
-  --serverlist-size: cover;
-  --serverlist-repeat: no-repeat;
-  --serverlist-brightness: 40%;
-  --list-background: transparent;
-  --list-position: ;
-  --list-size: cover;
-  --list-repeat: no-repeat;
-  --list-brightness: 40%;
-  --chat-background: transparent;
-  --chat-position: center;
-  --chat-size: cover;
-  --chat-repeat: no-repeat;
-  --chat-brightness: 35%;
-  --members-background: transparent;
-  --members-position: center;
-  --members-size: cover;
-  --members-repeat: no-repeat;
-  --members-brightness: 40%;
+:root { /* Main */
+  --main-primary-colour: salmon;
+  --main-primary-colour-transparency: 70%;
+  --main-border-colour: var(--main-primary-colour);
+  --main-border-thickness: 2px;
+  --main-border-style: solid;
+  --main-hover-colour: color-mix(in srgb, var(--main-primary-colour) var(--main-hover-transparency), transparent);
+  --main-hover-transparency: 50%;
+  --main-roundness: 1em;
+  --main-icon-roundness: 100%;
 }
-/*hide all backgrounds*/
-.guilds-2JjMmN, .sidebar-1tnWFu, .chat-2ZfjoI, .container-2o3qEW, .privateChannels-oVe7HL>.scroller-WSmht3, .privateChannels-oVe7HL, .chatContent-3KubbW, .chat-2ZfjoI>.title-31SJ6t, .userPanelOuter-XfFELn, .userPanelInner-3KPel3, .sidebar-1tnWFu>.container-1NXEtd, .members-3WRCEx, .container-2o3qEW, .chat-2ZfjoI, .member-2gU6Ar, .container-q97qHp, .panels-3wFtMD, .panels-3wFtMD>#vc-spotify-player, .panels-3wFtMD>.container-YkUktl{
-  background: transparent;
+/* temporary fixes for other stuff */
+.avatar-31d8He {
+  background-size: contain;
+  aspect-ratio: 1;
 }
-/*app*/
-.baseLayer-W6S8cY:before {
-  position: absolute;
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  background: var(--main-background);
-  background-position: var(--main-position);
-  background-size: var(--main-size);
-  background-repeat: var(--main-repeat);
-  filter: brightness(var(--main-brightness));
+.vc-rdb-review {
+  overflow: hidden;
 }
-/*memberslist*/
-.container-2o3qEW:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: var(--members-background);
-  background-position: var(--members-position);
-  background-size: var(--members-size);
-  background-repeat: var(--members-repeat);
-  filter: brightness(var(--members-brightness));
+/* hide loading stuff so you see quicker :P [one of those background transparents has the other one... i am not finding it right now */
+.wrapper-3HVHpV {
+  opacity: 0;
 }
-/*chat*/
-.chat-2ZfjoI:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: var(--chat-background);
-  background-position: var(--chat-position);
-  background-size: var(--chat-size);
-  background-repeat: var(--chat-repeat);
-  filter: brightness(var(--chat-brightness));
+/* Hide Stock Colours */
+.folderIconWrapper-1oRIZr:is([style$="88, 101, 242, 0.4);"]), .folder-241Joy, .upload-vLbqu-, .content-3spvdd, .emptyChannelIcon-1YdEz2, .scrollbarGhostHairline-2LpzZ9, .circleIconButton-1VxDrg, .childWrapper-1j_1ub, .threadSuggestionBar-3ExSyc, .attachedBars-2BCP3l, .replyBar-1oi75v, .scrollableContainer-15eg7h, .linkTop-1W1aK6, .wrapper-NhbLHG>div>.link-1_kTxV {
+  background: transparent !important;
+  border: none;
 }
-/*channels/dms*/
-.sidebar-1tnWFu:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: inherit;
-  background: var(--list-background);
-  background-position: var(--list-position);
-  background-size: var(--list-size);
-  background-repeat: var(--list-repeat);
-  filter: brightness(var(--list-brightness));
+/* Static Objects */
+.button-TGAkj4, /* activity buttons */
+.userPanelOverlayBackground-3Zmcq2, /* DM sidepanel profile*/
+.searchBar-3TnChZ>.searchBarComponent-3N7dCG, /* dm search bar */
+.searchBar-jGtisZ, /*channel search bar*/
+.wrapper-2vIMkT, /* Message Toolbar */
+#message-actions, /* message toolbar? */
+.channelTextArea-1FufC0>.autocomplete-3NRXG8, /*emote autocomplete*/
+.channelTextArea-1FufC0 /*messagebar*/
+{
+  background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency));
+  border-radius: var(--main-roundness);
+  border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
 }
-/*serverlist*/
-.guilds-2JjMmN:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: var(--serverlist-background);
-  background-position: var(--serverlist-position);
-  background-size: var(--serverlist-size);
-  background-repeat: var(--serverlist-repeat);
-  filter: brightness(var(--serverlist-brightness));
+/* Moving Objects */
+.embedWrapper-1MtIDg:not(.imageContent-3Av-9c), /* Website Embeds */
+.wrapper-2PSQCG:has([style$="88, 101, 242, 0.4);"]), /* Uncoloured Folders*/ 
+.wrapper-1HIH0j, /* Server Invites */ 
+.listItemWrapper-3d87LP,  /*Servericons*/
+.codeContainer-2LCL7Y, /*codeblocks*/
+.selected-2TbFuo>.wrapper-NhbLHG, /*selected channel*/
+.channel-1Shao0>.selected-26oxtA, /* selected dm */
+.loaded-igpmmx>.card-2TuZPZ /*Discover Servers*/
+{
+  background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency)) !important;
+  border-radius: var(--main-roundness);
+  border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
 }
-/*dont remember :trolley:*/
-.content-3AIQZv, .container-2RRFHK {
+/* Hovering Objects */
+.channelTextArea-1FufC0:hover, /*messagebar*/
+.codeContainer-2LCL7Y:hover, /*codeblocks*/
+.wrapper-NhbLHG:hover, /*hovered channel*/
+.channel-1Shao0>div:hover, /*hovered dm*/
+.container-1oeRFJ:hover, /*hover on discover server channels*/
+.card-2TuZPZ:hover /*Discover Servers*/
+{
+  background-color: var(--main-hover-colour);
+  border-radius: var(--main-roundness);
+  border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
+}
+/* Small Fixes, dont ask */
+.DraftEditor-root {
+  top: -1px;
+}
+.contents-2MsGLg>.markup-eYLPri { 
+  overflow: visible;
+}
+.wrapper-NhbLHG, .channel-1Shao0>div {
+  border: transparent var(--main-border-style) var(--main-border-thickness);
+}
+.wrapper-2vIMkT>div {
+  padding-top: 2.5px;
+}
+.placeholder-1rCBhr, .expandedFolderIconWrapper-3RwQpD>svg {
+  color: var(--main-border-colour) !important;
+}
+.expandedFolderIconWrapper-3RwQpD>svg {
+  margin: 0 4px 4px 0;
+}
+.public-DraftEditorPlaceholder-root {
+  margin-left: 33%;
+}
+.searchBarComponent-3N7dCG {
+  text-align: center !important;
+}
+.codeContainer-2LCL7Y>.scrollbar-3vVt8d {
+  border: none;
+}
+.listItemWrapper-3d87LP, .selected-1Drb7Z, .icon-3AqZ2e, .wrapper-2PSQCG {
+  border-radius: calc(var(--main-icon-roundness)/2) !important;
+}
+.profilePanelConnections-1tVK8j+div {
   display: none;
-}
-/*weird rounding (badumts) error made by discord*/
-.content-1SgpWY>.sidebar-1tnWFu {
-  border-radius: 0px;
 }
