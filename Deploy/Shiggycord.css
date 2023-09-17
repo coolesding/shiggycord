@@ -28,6 +28,7 @@
   border: none;
 }
 /* Static Objects */
+.wrapper-2SplAX, /* announcements notif*/
 .button-TGAkj4, /* activity buttons */
 .userPanelOverlayBackground-3Zmcq2, /* DM sidepanel profile*/
 .searchBar-3TnChZ>.searchBarComponent-3N7dCG, /* dm search bar */
@@ -42,6 +43,7 @@
   border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
 }
 /* Moving Objects */
+.embed-hKpSrO,
 .embedWrapper-1MtIDg:not(.imageContent-3Av-9c), /* Website Embeds */
 .wrapper-2PSQCG:has([style$="88, 101, 242, 0.4);"]), /* Uncoloured Folders*/ 
 .wrapper-1HIH0j, /* Server Invites */ 
@@ -49,21 +51,24 @@
 .codeContainer-2LCL7Y, /*codeblocks*/
 .selected-2TbFuo>.wrapper-NhbLHG, /*selected channel*/
 .channel-1Shao0>.selected-26oxtA, /* selected dm */
-.loaded-igpmmx>.card-2TuZPZ /*Discover Servers*/
+.loaded-igpmmx>.card-2TuZPZ, /*Discover Servers*/
+.reaction-3vwAF2 /* Reactions */
 {
-  background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency)) !important;
+  background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency))!important;
   border-radius: var(--main-roundness);
-  border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
+  border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour)!important;
 }
 /* Hovering Objects */
 .channelTextArea-1FufC0:hover, /*messagebar*/
 .codeContainer-2LCL7Y:hover, /*codeblocks*/
 .wrapper-NhbLHG:hover, /*hovered channel*/
+.listItemWrapper-3d87LP:hover, .listItemWrapper-3d87LP.selected-3a1QGn, /*Servericons*/
 .channel-1Shao0>div:hover, /*hovered dm*/
 .container-1oeRFJ:hover, /*hover on discover server channels*/
-.card-2TuZPZ:hover /*Discover Servers*/
+.card-2TuZPZ:hover, /*Discover Servers*/
+.reaction-3vwAF2:hover /* Reactions */
 {
-  background-color: var(--main-hover-colour);
+  background-color: var(--main-hover-colour)!important; 
   border-radius: var(--main-roundness);
   border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
 }
@@ -80,7 +85,7 @@
 .wrapper-2vIMkT>div {
   padding-top: 2.5px;
 }
-.placeholder-1rCBhr, .expandedFolderIconWrapper-3RwQpD>svg {
+.placeholder-1rCBhr, .expandedFolderIconWrapper-3RwQpD>svg{
   color: var(--main-border-colour) !important;
 }
 .expandedFolderIconWrapper-3RwQpD>svg {
