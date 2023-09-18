@@ -53,16 +53,14 @@ Variablesidebar
  - Stretchedmemberlist
  
  - Onekoanimations should have more animations [Low Priority]
- - Shiggycord is very barren [High Priority]
- - Shiggyreactions only has one animation [Low Priority]
+- Shiggyreactions only has one animation [Low Priority]
  - Titlebar sometimes overlaps with different objects making it ugly/weird to use [Medium Priority]
  - Userpopouts do not have any colouring options [Low Priority]
 
 # Planned Features and Public TODO List
  - Add a graphical Versionindicator that can always be accessed quickly
- - Update notifications for new Variables´
+ - Update notifications for new Variables
  - A ready to go Skin List for the Onekosuite {Onekohomeicon and Onekomessagebar}
- - Creating advanced variablelist
  - Minifying all Snippets in Deploy automatically
  - Finishing the README.md
  - Images to display different features
