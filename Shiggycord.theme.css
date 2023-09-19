@@ -7,6 +7,10 @@
 /* Radialstatus Snippet, use with "MoreUserTags" and "PlatformIndicators" active on all settings */
 @import url(https://coolesding.github.io/shiggycord/Deploy/Radialstatus.css);
 
+/* A version of Radialstatus with better performance, try if the other one makes your client lag on scrolling chat */
+/* @import url(https://coolesding.github.io/shiggycord/Deploy/Radialstatusv3.css); */
+
+
 /* Make the Settings look like an independent Window */
 @import url(https://coolesding.github.io/shiggycord/Deploy/Settingswindow.css);
 
