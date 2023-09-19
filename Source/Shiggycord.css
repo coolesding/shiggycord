@@ -41,7 +41,7 @@
 #message-actions, /* message toolbar? */
 .channelTextArea-1FufC0>.autocomplete-3NRXG8, /*emote autocomplete*/
 .channelTextArea-1FufC0, /*messagebar*/
-.panels-3wFtMD /* YkUktl's father */
+.sidebar-1tnWFu>.panels-3wFtMD /* YkUktl's father */
 {
   background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency)) !important;
   border-radius: var(--main-roundness);
