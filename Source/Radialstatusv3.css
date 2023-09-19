@@ -1,0 +1,52 @@
+.mask-1y0tyc>rect, .pointerEvents-2KjWnj, .avatar-3QF_VA>svg>circle, .contents-2MsGLg .vc-platform-indicator>svg, .avatarHoverTarget-1zzfRL>div>svg>circle, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .avatarHoverTarget-1zzfRL>div>svg>mask>rect, .avatarHintInner-2HUAWj
+{
+  display: none;
+}
+.avatar-31d8He {
+  z-index: 1;
+  border-radius: calc(var(--rs-small-roundness)/2);
+}
+.avatar-3521_d {
+  scale: 1.3;
+}
+/* Chat, Memberlist, DMs and Friendlist */
+.avatar-2e8lTP, /*chat*/
+.avatar-3521_d>.svg-1G_H_8>foreignObject, /* chat top img */
+.avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), /*dm list*/
+.wrapper-3Un6-K, /*memberslist*/
+.avatar-2MSPKk /*friendlist*/
+{
+  border: var(--rs-offline-color) var(--rs-small-thickness) solid;
+  border-radius: calc(var(--rs-small-roundness)/2);
+  scale: var(--rs-small-size);
+  aspect-ratio: 1;
+}
+.contents-2MsGLg:has([fill="var(--green-360"])>.avatar-2e8lTP, /*chat*/
+.avatar-3521_d>.svg-1G_H_8:has(rect[fill="#23a55a"])>foreignObject, /*chat top img*/
+.layout-1LjVue:has([fill="var(--green-360"]), /*dm list*/
+.wrapper-3Un6-K:has([fill="#23a55a"]), /*memberslist*/
+.avatar-2MSPKk:has([fill="#23a55a"]) /*friendlist*/
+{
+  border-color: var(--rs-online-color);
+}
+.contents-2MsGLg:has([fill="var(--yellow-300"])>.avatar-2e8lTP, /*chat*/
+.avatar-3521_d>.svg-1G_H_8:has(rect[fill="#f0b232"])>foreignObject, /*chat top img*/
+.layout-1LjVue:has([fill="var(--yellow-300"]), /*dm list*/
+.wrapper-3Un6-K:has([fill="#f0b232"]), /*memberslist*/
+.avatar-2MSPKk:has([fill="#f0b232"]) /*friendlist*/
+{
+  border-color: var(--rs-idle-color);
+}
+.contents-2MsGLg:has([fill="var(--red-400"])>.avatar-2e8lTP, /*chat*/
+.avatar-3521_d>.svg-1G_H_8:has(rect[fill="#f23f43"])>foreignObject, /*chat top img*/
+.layout-1LjVue:has([fill="#f23f43"]), /*dm list*/
+.wrapper-3Un6-K:has([fill="#f23f43"]), /*memberslist*/
+.avatar-2MSPKk:has([fill="#f23f43"]) /*friendlist*/
+{
+  border-color: var(--rs-dnd-color);
+}
+.contents-2MsGLg:has([data-tag^="bot"])>.avatar-2e8lTP, /*chat*/
+.layout-1qmrhw:has([data-tag^="bot"])>.avatar-6qzftW>.wrapper-3Un6-K /*memberslist*/
+{
+  border-color: var(--rs-bot-color);
+}
