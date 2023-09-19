@@ -27,7 +27,7 @@
 .avatar-2e8lTP, /*chat*/
 .avatar-3521_d>.svg-1G_H_8>foreignObject, /* chat top img */
 .avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), /*dm list*/
-.wrapper-3Un6-K, /*everything else*/
+.wrapper-3Un6-K:not(.avatar-3521_d), /*everything else*/
 .avatar-2MSPKk, /*friendlist*/
 .imageUploaderInner-IIRaFr /*edit profile*/
 {
