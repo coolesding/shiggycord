@@ -3,8 +3,8 @@
   --main-primary-colour: salmon;
   --main-primary-colour-transparency: 70%;
   --main-border-colour: var(--main-primary-colour);
-  --main-border-thickness: 2px;
   --main-border-style: solid;
+  --main-border-thickness: 2px;
   --main-hover-colour: color-mix(in srgb, var(--main-primary-colour) var(--main-hover-transparency), transparent);
   --main-hover-transparency: 50%;
   --main-roundness: 1em;
@@ -40,13 +40,16 @@
 .wrapper-2vIMkT, /* Message Toolbar */
 #message-actions, /* message toolbar? */
 .channelTextArea-1FufC0>.autocomplete-3NRXG8, /*emote autocomplete*/
-.channelTextArea-1FufC0 /*messagebar*/
+.channelTextArea-1FufC0, /*messagebar*/
+.panels-3wFtMD /* YkUktl's father */
 {
-  background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency));
+  background-color: color-mix(in srgb, var(--main-primary-colour), transparent var(--main-primary-colour-transparency)) !important;
   border-radius: var(--main-roundness);
   border: var(--main-border-thickness) var(--main-border-style) var(--main-border-colour);
 }
 /* Moving Objects */
+.markup-eYLPri>code.inline, /* different type of embed */
+.expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi), /*opened folders*/
 .itemCard-3Etziu, /*Active now list*/
 .body-16rSsp, /*active now activity*/
 .actionButton-3-B2x-, /*blocked list remove button*/
@@ -91,6 +94,9 @@
 .wrapper-NhbLHG, .channel-1Shao0>div, .container-1oeRFJ, .peopleListItem-u6dGxF, .item-3mHhwr {
   border: transparent var(--main-border-style) var(--main-border-thickness);
 }
+.expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi)+.listItem-3SmSlK {
+  margin-left: var(--main-border-thickness);
+}
 .wrapper-2vIMkT>div {
   padding-top: 2.5px;
 }
@@ -98,7 +104,10 @@
   color: var(--main-border-colour) !important;
 }
 .folderIconWrapper-1oRIZr:is([style$="88, 101, 242, 0.4);"])>.expandedFolderIconWrapper-3RwQpD>svg {
-  margin: 0 4px 4px 0;
+  margin: 0 calc(var(--main-border-thickness)*2) calc(var(--main-border-thickness)*2) 0;
+}
+.expandedFolderBackground-1kSAf6~ul {
+  margin-left: var(--main-border-thickness);
 }
 .public-DraftEditorPlaceholder-root {
   margin-left: 33%;
@@ -107,7 +116,7 @@
   text-align: center;
   color: var(--main-border-colour);
 }
-.codeContainer-2LCL7Y>.scrollbar-3vVt8d {
+.codeContainer-2LCL7Y>.scrollbar-3vVt8d, #vc-spotify-player{
   border: none;
 }
 .listItemWrapper-3d87LP, .selected-1Drb7Z, .icon-3AqZ2e, .wrapper-2PSQCG {
