@@ -15,7 +15,7 @@
   --rs-large-thickness: 6px;
 }
 .pointerEvents-2KjWnj, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .svg-1G_H_8>circle, .svg-lIB-lq, .avatarHint-k7pYop, .status-170GHg {
-  display: none;
+  display: none !important;
 }
 .avatar-31d8He {
   z-index: 1;
