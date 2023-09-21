@@ -14,8 +14,8 @@
   --rs-large-roundness: 100%;
   --rs-large-thickness: 6px;
 }
-.pointerEvents-2KjWnj, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .svg-1G_H_8>circle, .svg-lIB-lq, .avatarHint-k7pYop, .status-170GHg {
-  display: none;
+.pointerEvents-2KjWnj, .cursorDefault-2M8ZNp, .bannerSVGWrapper-2CLfzN>mask>circle, .svg-1G_H_8>circle, .svg-lIB-lq, .avatarHint-k7pYop, .status-170GHg, .svg-1G_H_8>rect[fill="black"] {
+  display: none !important;
 }
 .avatar-31d8He {
   z-index: 1;
@@ -24,10 +24,10 @@
 .avatar-3521_d {
   scale: 1.3;
 }
-.avatar-2e8lTP, /*chat*/
+:not(.vc-rdb-review)>.avatar-2e8lTP, /*chat*/
 .avatar-3521_d>.svg-1G_H_8>foreignObject, /* chat top img */
 .avatar-1HDIsL:not(:has(.linkButtonIcon-7rsZcu)), /*dm list*/
-.wrapper-3Un6-K, /*everything else*/
+.wrapper-3Un6-K:not(.avatar-3521_d), /*everything else*/
 .avatar-2MSPKk, /*friendlist*/
 .imageUploaderInner-IIRaFr /*edit profile*/
 {
@@ -42,7 +42,7 @@
 .wrapper-3Un6-K:has([fill="#23a55a"]), /*memberslist*/
 .avatarUploader-qEFQS2:has([fill="var(--green-360)"])>.imageUploader-1X7wVc>.imageUploaderIconWrapper-14sdnH>.imageUploaderInner-IIRaFr
 {
-  border-color: var(--rs-online-color);
+  border-color: var(--rs-online-color)!important;
 }
 .contents-2MsGLg:has([fill="var(--yellow-300"])>.avatar-2e8lTP, /*chat*/
 .avatar-3521_d>.svg-1G_H_8:has(rect[fill="#f0b232"])>foreignObject, /*chat top img*/
@@ -50,7 +50,7 @@
 .wrapper-3Un6-K:has([fill="#f0b232"]), /*memberslist*/
 .avatarUploader-qEFQS2:has([fill="var(--yellow-300)"])>.imageUploader-1X7wVc>.imageUploaderIconWrapper-14sdnH>.imageUploaderInner-IIRaFr
 {
-  border-color: var(--rs-idle-color);
+  border-color: var(--rs-idle-color)!important;
 }
 .contents-2MsGLg:has([fill="var(--red-400"])>.avatar-2e8lTP, /*chat*/
 .avatar-3521_d>.svg-1G_H_8:has(rect[fill="#f23f43"])>foreignObject, /*chat top img*/
@@ -58,12 +58,12 @@
 .wrapper-3Un6-K:has([fill="#f23f43"]), /*memberslist*/
 .avatarUploader-qEFQS2:has([fill="var(--red-400)"])>.imageUploader-1X7wVc>.imageUploaderIconWrapper-14sdnH>.imageUploaderInner-IIRaFr
 {
-  border-color: var(--rs-dnd-color);
+  border-color: var(--rs-dnd-color)!important;
 }
 .contents-2MsGLg:has([data-tag^="bot"])>.avatar-2e8lTP, /*chat*/
 .layout-1qmrhw:has([data-tag^="bot"])>.avatar-6qzftW>.wrapper-3Un6-K /*memberslist*/
 {
-  border-color: var(--rs-bot-color);
+  border-color: var(--rs-bot-color)!important;
 }
 /*Settings for Medium and Large*/
 .avatarHoverTarget-1zzfRL>.wrapper-3Un6-K, .imageUploaderInner-IIRaFr {
