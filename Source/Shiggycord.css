@@ -10,14 +10,6 @@
   --main-roundness: 1em;
   --main-icon-roundness: 100%;
 }
-/* temporary fixes for other stuff */
-.avatar-31d8He {
-  background-size: contain;
-  aspect-ratio: 1;
-}
-.vc-rdb-review {
-  overflow: hidden;
-}
 /* hide loading stuff so you see quicker :P [one of those background transparents has the other one... i am not finding it right now */
 .wrapper-3HVHpV {
   opacity: 0;
