@@ -1,0 +1,34 @@
+[id^="message-reactions-"]:has([aria-label^="shiggy"]):before {
+  scale: 0.8;
+  content: "";
+  height: 25.6px;
+  top: 22.7px;
+  position: relative;
+  width: 32px;
+  border-radius: 0.5rem;
+  background: var(--background-secondary);
+  order: 2;
+  left: -32px;
+}
+[id^="message-reactions-"]:has([aria-label^="shiggy"]):after {
+  scale: 0.8;
+  content: "";
+  height: 32px;
+  width: 32px;
+  position: relative;
+  border-radius: 0.8rem;
+  background: url(https://raw.githubusercontent.com/UserPFP/img/main/Avatars/shiggy.gif);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  order: 2;
+  left: -64px;
+  top: 21.3px;
+  margin-right: -64px;
+}
+[id^="message-reactions-"]>div:has([aria-label^="shiggy"]) {
+  order: 1;
+}
+[id^="message-reactions-"]>[aria-label] {
+  order: 3;
+}
