@@ -1,7 +1,8 @@
 /*Check if settings are open, if so, explod*/
 [class^=typeWindows-]:not([class*=withBackgroundOverride-]) {
     display: none
-}/*The window buttons themselves*/
+}
+/*The window buttons themselves*/
 [class^=winButton] {
     height: 47px;
     top: 0px
@@ -17,5 +18,5 @@
 }
 /*Move the icons in the titlebar to the left to make space for window buttons*/
 [class^=title-] {
-    right: 80px
+    width: calc(100% - 80px)
 }
