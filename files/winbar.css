@@ -1,20 +1,21 @@
-/*The windows buttons themselves*/
+/*Check if settings are open, if so, explod*/
+[class^=typeWindows-]:not([class*=withBackgroundOverride-]) {
+    display: none
+}/*The window buttons themselves*/
 [class^=winButton] {
     height: 47px;
+    top: 0px
 }
-  /*Hide the bar containing windows buttons without hiding the buttons*/
-  [class^=typeWindows-] {
-    height: 0
+/*Hide the bar containing window buttons without hiding the buttons*/
+[class^=typeWindows-] {
+    height: 0;
+    margin: 0
 }
-  /*Remove Discords Branding*/
-  [class^=wordmarkWindows] {
-    display: none;
+/*Remove Discords Branding*/
+[class^=wordmarkWindows] {
+    display: none
 }
-  /*Move the icons in the titlebar to the left to make space for window buttons*/
-  [class^=title-] {
-    right: 80px;
-}
-  /*Move entire window up to the screen because for some reason i have to*/
-  [class^=layers-] {
-    top: -4px;
+/*Move the icons in the titlebar to the left to make space for window buttons*/
+[class^=title-] {
+    right: 80px
 }
