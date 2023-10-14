@@ -1,5 +1,9 @@
-/*Check if settings are open, if so, explod*/
-[class^=typeWindows-]:not([class*=withBackgroundOverride-]) {
+/*Nukes the discord branding*/
+[class^=wordmarkWindows],
+/*Check for specific things, if true, explod*/
+[class^=typeWindows-]:not([class*=withBackgroundOverride-]), /*Check if settings are open*/
+#app-mount:has([class^=container]>[class^=uploadArea]>[class^=uploadDropModal])>[class^=typeWindows] /*Check if threads are open on the side*/
+{
     display: none
 }
 /*The window buttons themselves*/
@@ -11,10 +15,6 @@
 [class^=typeWindows-] {
     height: 0;
     margin: 0
-}
-/*Remove Discords Branding*/
-[class^=wordmarkWindows] {
-    display: none
 }
 /*Move the icons in the titlebar to the left to make space for window buttons*/
 [class^=title-] {
