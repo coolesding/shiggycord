@@ -14,7 +14,6 @@ This Theme is only supported for Vencord, feel free to commit with versions that
  - Performant and Optimized Code
  - High amounts of support and active development
  - A lot of Shiggy
- - Update Notifications if your Variables are presumably outdated
  - Actually Human Readable Code (Thanks Clearvision)
  - UserCSS Support (Soon [TM])
 
@@ -38,7 +37,7 @@ Shiggyreactions
 Stretchedmemberlist
   - This Snippet aims to stretch the memberlist on the right side of the screen all the way to the top of the screen, which improves the look of the discord app in a lot of configurations
 Titlebar
-  - Removes the Bar at the top housing the Discord branding and the window buttons, that get moved inside the Header
+  - Removes the Bar at the top housing the Discord branding and the window buttons, that get moved inside the Header. Use my shiggycordv3 version for now.
 Userpopouts
   - Modified Snippet from Aoi {https://github.com/SEELE1306} to entirely change the design of profiles and popouts
 Variablesidebar
