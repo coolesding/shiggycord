@@ -17,6 +17,6 @@
     margin: 0
 }
 /*Move the icons in the titlebar to the left to make space for window buttons*/
-[class^=title-] {
+[class^=title-], [class^=chat]>[class^=header-] {
     width: calc(100% - 80px)
 }
