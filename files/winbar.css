@@ -1,8 +1,9 @@
 /*Nukes the discord branding*/
 [class^=wordmarkWindows],
 /*Check for specific things, if true, explod*/
-[class^=typeWindows-]:not([class*=withBackgroundOverride-]), /*Check if settings are open*/
-#app-mount:has([class^=container]>[class^=uploadArea]>[class^=uploadDropModal])>[class^=typeWindows] /*Check if threads are open on the side*/
+[class^=typeWindows-]:not([class*=withBackgroundOverride]), /*Check if settings are open*/
+#app-mount:has([class^=container]>[class^=uploadArea]>[class^=uploadDropModal])>[class^=typeWindows], /*Check if threads are open on the side*/
+#app-mount:has([class^=chatLayerWrapper]>[class^=container]>[class^=container])>[class^=typeWindows]
 {
     display: none
 }
@@ -17,6 +18,6 @@
     margin: 0
 }
 /*Move the icons in the titlebar to the left to make space for window buttons*/
-[class^=title-], [class^=chat]>[class^=header-] {
+[class^=title-], [class^=chat]>[class^=header-], [class^=content]>[class*=container]>[class*=container] {
     width: calc(100% - 80px)
 }
