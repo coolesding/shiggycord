@@ -3,7 +3,7 @@
 /*Check for specific things, if true, explod*/
 [class^=typeWindows-]:not([class*=withBackgroundOverride]), /*Check if settings are open*/
 #app-mount:has([class^=container]>[class^=uploadArea]>[class^=uploadDropModal])>[class^=typeWindows], /*Check if threads are open on the side*/
-#app-mount:has([class^=chatLayerWrapper]>[class^=container]>[class^=container])>[class^=typeWindows]
+#app-mount:has([class^=chatLayerWrapper]>[class^=container]>[class^=container])>[class^=typeWindows] /*Check if message request is open*/
 {
     display: none
 }

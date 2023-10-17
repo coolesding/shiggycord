@@ -1,56 +1,52 @@
-:root {
-    --settings-width: 90vw;
-    --settings-height: 90vh;
-    --settings-rounding: 1em;
-    --settings-background-brightness: 50%;
-  }
-  /*Make settings window not full screen, center and add border radius*/
-  [class^=layers]>[class^=layer]+[class^=layer] {
-      width: var(--settings-width);
-      height: var(--settings-height);
-      left: calc((100vw - var(--settings-width))/2);
-      top: calc((100vh - var(--settings-height))/2);
-      border-radius: var(--settings-rounding);
-      padding: 0;
-  }
-  /*Make background window visible, normal size and darker*/
-  /*Check if there is a second layer object, which means settings are open, then select baselayer*/
-  [class^=layers]:has([class^=layer]+[class^=layer])>[class*=baseLayer-] {
-      opacity: 1!important;
-      transform: scale(1) !important;
-      filter: brightness(var(--settings-background-brightness));
-  }
-  /*Remove awkward empty left area of settings*/
-  [class^=sidebarRegion-] {
-    max-width: fit-content !important;
-  }
-  /*Remove awkward empty space at the top */
-  nav[class^=sidebar-] {
-    padding-top: 1em;
-  }
-  /*Remove awkward gray bar at the top*/
-  [class^=standardSidebarView-] {
-    top: 0px !important;
-  }
-  /*Fix Tabs not taking up the entire space (except my account because it breaks lmao)*/
-  [class^=contentColumn-1C7as6]:not(#my-account-tab) {
-    max-width: unset;
-  }
-  /*Make the close thing go across the entire screen*/
-  [class^=toolsContainer-]>[class^=tools-] {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-  } 
-  [class^=closeButton] {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    cursor: default;
-  }
-  /*Make sure the close thing doesn't get put over the settings lol*/
-  [class^=toolsContainer-] {
-    z-index: -1;
-  }
+/*Make settings window not full screen, center and add border radius*/
+[class^=layers]>[class^=layer]+[class^=layer] {
+  width: var(--settings-width, 90vw);
+  height: var(--settings-height, 90vh);
+  left: calc((100vw - var(--settings-width, 90vw))/2);
+  top: calc((100vh - var(--settings-height, 90vh))/2);
+  border-radius: var(--settings-rounding, 1em);
+  padding: 0;
+}
+/*Make background window visible, normal size and darker*/
+/*Check if there is a second layer object, which means settings are open, then select baselayer*/
+[class^=layers]:has([class^=layer]+[class^=layer])>[class*=baseLayer-] {
+  opacity: 1!important;
+  transform: scale(1) !important;
+  filter: brightness(var(--settings-background-brightness, 50%));
+  pointer-events: none;
+}
+/*Remove awkward empty left area of settings*/
+[class^=sidebarRegion-] {
+max-width: fit-content !important;
+}
+/*Remove awkward empty space at the top */
+nav[class^=sidebar-] {
+padding-top: 1em;
+}
+/*Remove awkward gray bar at the top*/
+[class^=standardSidebarView-] {
+top: 0px !important;
+}
+/*Fix Tabs not taking up the entire space (except my account because it breaks lmao)*/
+[class^=contentColumn]:not(#my-account-tab) {
+max-width: unset;
+}
+/*Make the close thing go across the entire screen*/
+[class^=toolsContainer-]>[class^=tools-] {
+top: -50vh;
+left: 0;
+width: 100vw;
+height: 100vh;
+opacity: 0;
+} 
+[class^=container]>[class^=closeButton] {
+position: absolute;
+width: 100vw;
+height: 200vh;
+cursor: default;
+border-radius: 0%;
+}
+/*Make sure the close thing doesn't get put over the settings lol*/
+[class^=toolsContainer-] {
+z-index: -1;
+}
