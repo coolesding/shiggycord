@@ -1,0 +1,67 @@
+/*Adds the offline border to everyone*/
+[class^=contents]>[class^=avatar]:first-child, /*Chat*/
+[class^=avatar-]>[class^=wrapper], /*Memberlist*/
+[class^=avatarHoverTarget]>[class^=wrapper], /*Userpopout*/
+[class^=header]>div>[class^=wrapper], /*Profiles*/
+[class^=userInfo]>[class^=wrapper], /*Friendlist*/
+[class^=layout]>[class^=avatar]>[class^=wrapper] /*dm list*/
+{
+border: var(--rs-offline-color, #636b75) var(--rs-small-thickness, 3px) var(--rs-border-style, solid);
+aspect-ratio: 1;
+}
+/*THOSE CHONKY SELECTORS
+Logic explanation because no one, not even i myself will understand this (im writing this in the middle of the night)
+First check if the highest parent has an svg that is the only child of its parent or that is not the phone indicator
+Then select the last one that fits the above criteria, only for users online on web and desktop at the same time
+Then check if that svg is of the specified colour, to decide which should be around the status ring
+*/
+/*Changes the border colour to Online if Online*/
+[class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]:first-child, 
+[class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
+[class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>div>[class^=wrapper]:has([fill="#23a55a"]),
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper] {
+border-color: var(--rs-online-color, #23a55a);
+}
+/*Changes the border colour to Idle if Idle*/
+[class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]:first-child, 
+[class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper],
+[class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>div>[class^=wrapper]:has([fill="#f0b232"]),
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper] {
+border-color: var(--rs-idle-color, #f0b232);
+}
+/*Changes the border colour to DND if DND*/
+[class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]:first-child, 
+[class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper],
+[class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>div>[class^=wrapper]:has([fill="#f23f43"]),
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper] {
+border-color: var(--rs-dnd-color, #f23f43);
+}
+/*Changes the border colour to Bot if Bot*/
+[class^=contents]:has([data-tag^="bot"])>[class^=avatar]:first-child, 
+[class^=memberInner]:has([data-tag^="bot"])>[class^=avatar]>[class^=wrapper], 
+[class^=userPopoutInner]:has([data-tag^="bot"])>[class^=clickable]>[class^=avatar]>[class^=wrapper],
+[class^=userProfileModalInner]:has([data-tag^="bot"])>[class^=topSection]>header>[class^=header]>div>[class^=wrapper] {
+border-color: var(--rs-bot-color, #5865f2);
+}
+/*Thickness setting for each*/
+[class^=avatarHoverTarget]>[class^=wrapper] {
+border-width: var(--rs-medium-thickness, 4px);
+}
+[class^=header]>div>[class^=wrapper] {
+border-width: var(--rs-large-thickness, 6px);
+}
+/*Remove unnecessary, buggy components*/
+rect[class^=pointerEvents], /*Default status indicator*/
+[class^=wrapper]>svg>circle, /*Default status indicator residue in popout and profile*/
+[class^=bannerSVGWrapper]>mask, /*Background behind avatar in popout and profile*/
+[class^=clickable]>svg /*"View Profile" text and Background*/ {
+display: none;
+}
+/*Fix default status indicator residue in memberlist*/
+[class^=avatarStack]>[class^=avatar] {
+z-index: 1;
+border-radius: 50%;
+}

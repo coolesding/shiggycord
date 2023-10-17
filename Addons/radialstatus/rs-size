@@ -1,0 +1,11 @@
+[class^=contents]>[class^=avatar]:first-child,
+[class^=avatar-]>[class^=wrapper],
+[class^=userInfo]>[class^=wrapper]{
+scale: var(--rs-small-size, 1);
+}
+[class^=avatarHoverTarget]>[class^=wrapper]{
+scale: var(--rs-medium-size, 1);
+}
+[class^=header]>div>[class^=wrapper]{
+scale: var(--rs-large-size, 1);
+}
