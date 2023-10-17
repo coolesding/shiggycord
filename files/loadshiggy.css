@@ -1,0 +1,27 @@
+/*Change the loading text*/
+[class^=tipTitle] {
+--load-text: "Loading Vesktop..." !important;
+}
+/*Nukes the "did you know..." text*/
+[class^=tipTitle] {
+text-transform: none;
+font-size: 0px;
+font-weight: 800
+}
+/*Replaces it with a custom message*/
+[class^=tipTitle]:after {
+content: var(--load-text, "Loading Vesktop...");
+font-size: 18px
+}
+/*Nukes the default animation*/
+[class^=ready] {
+scale: 0;
+}
+/*Replaces the default gif with a shiggy*/
+[class^=container]>[class^=content]:after {
+content: url(https://raw.githubusercontent.com/UserPFP/img/main/Avatars/shiggy.gif);
+position: relative;
+display: inline-block;
+top: -500px;
+zoom: 0.5;
+}
