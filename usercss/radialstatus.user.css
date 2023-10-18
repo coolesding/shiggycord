@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name Radialstatus
+@namespace vencord.dev
+@author coolesding
+@version 1.0.0
+@updateURL https://raw.githubusercontent.com/coolesding/shiggycord/v3/usercss/radialstatus.user.css
+@description A definitive version of Radialstatus. Futureproof, easy to use and ready to go
+@preprocessor uso
+@var range Smallthickness "Borderwidth on small avatars" 3, 0, 10, 1, px
+@var range Mediumthickness "Borderwidth on medium avatars" 4, 0, 10, 1, px
+@var range Largethickness "Borderwidth on large avatars" 6, 0, 10, 1, px
+@var text Online "Online Colour" #23a55a
+@var text Idle "Idle Colour" #f0b232
+@var text DND "Do Not Disturb Colour" #f23f43
+@var text Offline "Offline Colour" #636b75
+@var text Bot "Bot Colour" #5865f2
+@var text Style "Border Style" solid
+
+==/UserStyle== */
+/*Adds the offline border to everyone*/
+[class^=contents]>[class^=avatar]:first-child, /*Chat*/
+[class^=member]>[class^=avatar-]>[class^=wrapper], /*Memberlist*/
+[class^=avatarHoverTarget]>[class^=wrapper], /*Userpopout*/
+[class^=header]>div>[class^=wrapper], /*Profiles*/
+[class^=userInfo]>[class^=wrapper], /*Friendlist*/
+[class^=layout]>[class^=avatar]>[class^=wrapper]:is([aria-label]), /*Dm list*/
+[class^=avatarWrapper]>[class^=wrapper] /*User Area*/{
+border: /*[[Offline]]*/ /*[[Smallthickness]]*/ /*[[Style]]*/;
+aspect-ratio: 1;
+}
+/*THOSE CHONKY SELECTORS
+Logic explanation because no one, not even i myself will understand this (im writing this in the middle of the night)
+First check if the highest parent has an svg that is the only child of its parent or that is not the phone indicator
+Then select the last one that fits the above criteria, only for users online on web and desktop at the same time
+Then check if that svg is of the specified colour, to decide which should be around the status ring
+*/
+/*Changes the border colour to Online if Online*/
+[class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]:first-child, 
+[class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
+[class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>div>[class^=wrapper],
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
+[class^=avatarWrapper-]>[class^=wrapper-]:has([fill="#23a55a"]),
+[class^=userInfo-]>[class^=wrapper-]:has([fill="#23a55a"]) {
+border-color: /*[[Online]]*/
+}
+/*Changes the border colour to Idle if Idle*/
+[class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]:first-child, 
+[class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper],
+[class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>div>[class^=wrapper],
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper],
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f0b232"]),
+[class^=userInfo-]>[class^=wrapper-]:has([fill="#f0b232"]) {
+border-color: /*[[Idle]]*/
+}
+/*Changes the border colour to DND if DND*/
+[class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]:first-child, 
+[class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper],
+[class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>div>[class^=wrapper],
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper],
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f23f43"]),
+[class^=userInfo-]>[class^=wrapper-]:has([fill="#f23f43"]) {
+border-color: /*[[DND]]*/
+}
+/*Changes the border colour to Bot if Bot*/
+[class^=contents]:has([data-tag^="bot"])>[class^=avatar]:first-child, 
+[class^=memberInner]:has([data-tag^="bot"])>[class^=avatar]>[class^=wrapper], 
+[class^=userPopoutInner]:has([data-tag^="bot"])>[class^=clickable]>[class^=avatar]>[class^=wrapper],
+[class^=userProfileModalInner]:has([data-tag^="bot"])>[class^=topSection]>header>[class^=header]>div>[class^=wrapper] {
+border-color: /*[[Bot]]*/
+}
+/*Thickness setting for each*/
+[class^=avatarHoverTarget]>[class^=wrapper] {
+border-width: /*[[Mediumthickness]]*/;
+}
+[class^=header]>div>[class^=wrapper] {
+border-width: /*[[Largethickness]]*/;
+}
+/*Remove unnecessary, buggy components*/
+rect[class^=pointerEvents], /*Default status indicator*/
+[class^=wrapper]>svg>circle, /*Default status indicator residue in popout and profile*/
+[class^=bannerSVGWrapper]>mask, /*Background behind avatar in popout and profile*/
+[class^=clickable]>svg, /*"View Profile" text and Background*/ 
+[class^=wrapper]>[class^=mask]>svg, /*Moon and DND symbol*/
+[class^=wrapper]>svg>rect /*Mobile status indicator residue in popout and profile*/{
+display: none;
+}
+/*Fix default status indicator residue in memberlist*/
+[class^=avatarStack]>[class^=avatar] {
+z-index: 1;
+border-radius: 50%;
+}
