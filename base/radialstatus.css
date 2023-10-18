@@ -1,10 +1,10 @@
 /*Adds the offline border to everyone*/
 [class^=contents]>[class^=avatar]:first-child, /*Chat*/
-[class^=avatar-]>[class^=wrapper], /*Memberlist*/
+[class^=member]>[class^=avatar-]>[class^=wrapper], /*Memberlist*/
 [class^=avatarHoverTarget]>[class^=wrapper], /*Userpopout*/
 [class^=header]>div>[class^=wrapper], /*Profiles*/
 [class^=userInfo]>[class^=wrapper], /*Friendlist*/
-[class^=layout]>[class^=avatar]>[class^=wrapper], /*Dm list*/
+[class^=layout]>[class^=avatar]>[class^=wrapper]:is([aria-label]), /*Dm list*/
 [class^=avatarWrapper]>[class^=wrapper] /*User Area*/{
 border: var(--rs-offline-color, #636b75) var(--rs-small-thickness, 3px) var(--rs-border-style, solid);
 aspect-ratio: 1;
