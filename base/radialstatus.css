@@ -21,7 +21,8 @@ Then check if that svg is of the specified colour, to decide which should be aro
 [class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
 [class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>div>[class^=wrapper],
 [class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
-[class^=avatarWrapper]>[class^=wrapper]:has([fill="#23a55a"]) {
+[class^=avatarWrapper-]>[class^=wrapper-]:has([fill="#23a55a"]),
+[class^=userInfo-]>[class^=wrapper-]:has([fill="#23a55a"]) {
 border-color: var(--rs-online-color, #23a55a);
 }
 /*Changes the border colour to Idle if Idle*/
@@ -30,7 +31,8 @@ border-color: var(--rs-online-color, #23a55a);
 [class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
 [class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>div>[class^=wrapper],
 [class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper],
-[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f0b232"]) {
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f0b232"]),
+[class^=userInfo-]>[class^=wrapper-]:has([fill="#f0b232"]) {
 border-color: var(--rs-idle-color, #f0b232);
 }
 /*Changes the border colour to DND if DND*/
@@ -39,7 +41,8 @@ border-color: var(--rs-idle-color, #f0b232);
 [class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
 [class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>div>[class^=wrapper],
 [class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper],
-[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f23f43"]) {
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f23f43"]),
+[class^=userInfo-]>[class^=wrapper-]:has([fill="#f23f43"]) {
 border-color: var(--rs-dnd-color, #f23f43);
 }
 /*Changes the border colour to Bot if Bot*/
