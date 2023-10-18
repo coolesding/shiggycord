@@ -4,8 +4,8 @@
 [class^=avatarHoverTarget]>[class^=wrapper], /*Userpopout*/
 [class^=header]>div>[class^=wrapper], /*Profiles*/
 [class^=userInfo]>[class^=wrapper], /*Friendlist*/
-[class^=layout]>[class^=avatar]>[class^=wrapper] /*dm list*/
-{
+[class^=layout]>[class^=avatar]>[class^=wrapper], /*Dm list*/
+[class^=avatarWrapper]>[class^=wrapper] /*User Area*/{
 border: var(--rs-offline-color, #636b75) var(--rs-small-thickness, 3px) var(--rs-border-style, solid);
 aspect-ratio: 1;
 }
@@ -19,24 +19,27 @@ Then check if that svg is of the specified colour, to decide which should be aro
 [class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]:first-child, 
 [class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
 [class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
-[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>div>[class^=wrapper]:has([fill="#23a55a"]),
-[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper] {
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>div>[class^=wrapper],
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--green-360"]))>[class^=avatar]>[class^=wrapper],
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#23a55a"]) {
 border-color: var(--rs-online-color, #23a55a);
 }
 /*Changes the border colour to Idle if Idle*/
 [class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]:first-child, 
 [class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper],
 [class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
-[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>div>[class^=wrapper]:has([fill="#f0b232"]),
-[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper] {
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>div>[class^=wrapper],
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--yellow-300"]))>[class^=avatar]>[class^=wrapper],
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f0b232"]) {
 border-color: var(--rs-idle-color, #f0b232);
 }
 /*Changes the border colour to DND if DND*/
 [class^=contents]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]:first-child, 
 [class^=member]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper],
 [class^=userPopoutInner]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=clickable]>[class^=avatarHoverTarget]>[class^=wrapper],
-[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>div>[class^=wrapper]:has([fill="#f23f43"]),
-[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper] {
+[class^=header]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>div>[class^=wrapper],
+[class^=layout]:has(svg:is(:only-child,:not([height="17"])):last-of-type:is([fill="var(--red-400"]))>[class^=avatar]>[class^=wrapper],
+[class^=avatarWrapper]>[class^=wrapper]:has([fill="#f23f43"]) {
 border-color: var(--rs-dnd-color, #f23f43);
 }
 /*Changes the border colour to Bot if Bot*/
