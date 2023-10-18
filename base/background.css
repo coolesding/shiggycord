@@ -1,6 +1,6 @@
 /*Change background of the main window specifically (needs !important) and fixes flashbang*/
 [class*=baseLayer] {
-  background: #1d1f21 !important;
+  background: var(--bg-main, var(--background-primary)) !important;
   transform: scale(1) !important;
 }
 /*Add new background*/
@@ -9,7 +9,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(https://wapchan.org/.static/snow.gif);
+  background: var(--bg-overlay, url(https://raw.githubusercontent.com/coolesding/shiggycord/v3/img/snow.gif));
   pointer-events: none;
 }
 /*Hide default backgrounds*/
@@ -21,7 +21,8 @@ body, #app-mount, [class^=app-], [class^=bg-], /*Entire App classes with backgro
 [class^=chat], [class^=chatContent], [class^=chat]>[class^=title-], /*Chat*/
 [class^=chat-]>[class^=header-], [class^=chat-]>[class^=content-], [class^=content-]>[class^=chat-], [class^=prompt-], /*Channels and Roles*/
 [class^=scroller-]>[class^=content-], [class^=mainTableContainer-],
-[class^=content]>[class^=container-]+[class^=container-], [class^=membersWrap]>[class^=members-], [class^=content-]>[class^=member-] /*Memberlist*/ {
+[class^=content]>[class^=container-]+[class^=container-], [class^=membersWrap]>[class^=members-], [class^=content-]>[class^=member-] /*Memberlist*/
+ {
   background: none;
 }
 /*Remove random awkward pseudoelements*/
