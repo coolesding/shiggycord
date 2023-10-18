@@ -15,18 +15,24 @@
   animation: var(--bg-overlay-animation)
 }
 /*Hide default backgrounds*/
-body, #app-mount, [class^=app-], [class^=bg-], /*Entire App classes with backgrounds*/
+body, #app-mount, [class^=app-], [class^=bg-], /*Entire app classes with backgrounds*/
 [class*=guilds-], /*Serverlist*/
 [class^=sidebar-], [class^=sidebar-]>[class^=container-], /*Channellist*/ [class^=panels-], 
 [class^=privateChannels-], [class^=privateChannels]>[class^=scroller-], /*Dmlist*/
 [class^=panels-]>[class^=container-], /*UserPanel*/
 [class^=chat], [class^=chatContent], [class^=chat]>[class^=title-], /*Chat*/
-[class^=chat-]>[class^=header-], [class^=chat-]>[class^=content-], [class^=content-]>[class^=chat-], [class^=prompt-], /*Channels and Roles*/
-[class^=scroller-]>[class^=content-], [class^=mainTableContainer-], /*Members in Servers*/
+[class^=chat-]>[class^=header-], [class^=chat-]>[class^=content-], [class^=content-]>[class^=chat-], [class^=prompt-], /*Channels and roles*/
+[class^=scroller-]>[class^=content-], [class^=mainTableContainer-], /*Members in servers*/
 [class^=content-]>[class^=container-], [class^=content-]>[class^=container-]>[class*=container-], /*Friendslist*/
-[class^=chatLayerWrapper-]>[class^=container-], [class^=container-]>[class^=container-]>[class^=container-], /*Create Thread*/
+[class^=nowPlayingColumn-], [class^=nowPlayingColumn-]>[class^=container-], [class^=itemCard-], /*Now playing column*/
+[class^=chatLayerWrapper-]>[class^=container-], [class^=container-]>[class^=container-]>[class^=container-], /*Create thread*/
 [class^=content]>[class^=container-]+[class^=container-], [class^=membersWrap]>[class^=members-], [class^=content-]>[class^=member-] /*Memberlist*/ {
   background: none;
+}
+/*Hide default backgrounds (!important required)*/
+[class^=pageWrapper] /*Discover servers page*/
+{
+  background: none !important;
 }
 /*Remove random awkward pseudoelements*/
 [class^=form-]:before, [class^=children-]:after {
