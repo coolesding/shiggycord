@@ -22,7 +22,9 @@ body, #app-mount, [class^=app-], [class^=bg-], /*Entire App classes with backgro
 [class^=panels-]>[class^=container-], /*UserPanel*/
 [class^=chat], [class^=chatContent], [class^=chat]>[class^=title-], /*Chat*/
 [class^=chat-]>[class^=header-], [class^=chat-]>[class^=content-], [class^=content-]>[class^=chat-], [class^=prompt-], /*Channels and Roles*/
-[class^=scroller-]>[class^=content-], [class^=mainTableContainer-],
+[class^=scroller-]>[class^=content-], [class^=mainTableContainer-], /*Members in Servers*/
+[class^=content-]>[class^=container-], [class^=content-]>[class^=container-]>[class*=container-], /*Friendslist*/
+[class^=chatLayerWrapper-]>[class^=container-], [class^=container-]>[class^=container-]>[class^=container-], /*Create Thread*/
 [class^=content]>[class^=container-]+[class^=container-], [class^=membersWrap]>[class^=members-], [class^=content-]>[class^=member-] /*Memberlist*/ {
   background: none;
 }
