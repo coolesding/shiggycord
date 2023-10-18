@@ -57,7 +57,9 @@ border-width: var(--rs-large-thickness, 6px);
 rect[class^=pointerEvents], /*Default status indicator*/
 [class^=wrapper]>svg>circle, /*Default status indicator residue in popout and profile*/
 [class^=bannerSVGWrapper]>mask, /*Background behind avatar in popout and profile*/
-[class^=clickable]>svg /*"View Profile" text and Background*/ {
+[class^=clickable]>svg, /*"View Profile" text and Background*/ 
+[class^=wrapper]>[class^=mask]>svg, /*Moon and DND symbol*/
+[class^=wrapper]>svg>rect /*Mobile status indicator residue in popout and profile*/{
 display: none;
 }
 /*Fix default status indicator residue in memberlist*/
