@@ -18,6 +18,6 @@
     margin: 0
 }
 /*Move the icons in the titlebar to the left to make space for window buttons*/
-[class^=title-], [class^=chat]>[class^=header-], [class^=content]>[class*=container]>[class*=container] {
+[class^=content]:not(:has([class^=container-]>[class^=container-]>[class^=container-]))>[class^=chat]>[class^=title-], [class^=chat]>[class^=header-], [class^=base-]>[class^=content-]>[class^=container-]>[class*=container-]:not([aria-label]) {
     width: calc(100% - 80px)
 }
