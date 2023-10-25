@@ -14,4 +14,9 @@
     --rs-large-roundness: 50%;
     --rs-large-thickness: 6px;
     --rs-border-style: solid;
-  }
+}
+:root {
+  --bg-settings-background: unset; /*Change the main background colour*/
+  --bg-settings-overlay: unset; /*Make an animated overlay like the default example*/
+  --bg-settings-overlay-animation: unset /*Advanced: Add an animation to the overlay*/;
+}

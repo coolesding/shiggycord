@@ -19,25 +19,26 @@
 }
 /*Hide default backgrounds*/
 body, #app-mount, [class^=app_], [class^=bg_], /*Entire app classes with backgrounds*/
-nav[class^=wrapper_], /*Serverlist*/
+nav[class^=wrapper_], [class^=expandedFolderBackground_],/*Serverlist*/
 [class^=sidebar_],  /*Channellist*/ 
 [class^=privateChannels_], [class^=privateChannels_]>[class^=scroller_], /*Dmlist*/
 [class^=panels_], [class^=panels_]>[class^=container_], /*Profile panel*/
-[class^=chat], [class^=chatContent],  /*Chat*/
+[class^=chat_], [class^=chatContent_],  /*Chat*/
+[class^=profilePanel_]>[class^=userPanelOuter_], [class^=userPanelOuter_]:not([style])>[class^=userPanelInner], /*Profile popout in dm*/
 [class^=chat_]>[class^=header_], [class^=chat_]>[class^=content_], [class^=content_]>[class^=chat_], [class^=prompt_], /*Channels and roles*/
 [class^=mainTableContainer_], /*Members in servers*/
 [class^=content_]>[class^=container_], [class^=content_]>[class^=container_]>[class*=container_], /*Friendslist*/
 [class^=nowPlayingColumn_], [class^=nowPlayingColumn_]>[class^=container_], [class^=itemCard_], /*Now playing column*/
 [class^=chatLayerWrapper_]>[class^=container_], [class^=container_]>[class^=container_]>[class^=container_], /*Create thread*/
-[class^=content]>[class^=container_]+[class^=container_], [class^=membersWrap]>[class^=members_], [class^=content_]>[class^=member_], /*Memberlist*/
-[class*=noChat], [class^=callContainer], /*Call background*/
-[class^=channelChatWrapper]>div[class^=container_], [class^=container_]>[class^=uploadArea_]+section/*Voice channel chat*/ {
+[class^=content_]>[class^=container_]+[class^=container_], [class^=membersWrap_]>[class^=members_], [class^=content_]>[class^=member_], /*Memberlist*/
+[class*=noChat_], [class^=callContainer_], /*Call background*/
+[class^=channelChatWrapper_]>div[class^=container_], [class^=container_]>[class^=uploadArea_]+section/*Voice channel chat*/ {
   background: none;
 }
 /*Hide default backgrounds (!important required)*/
 section[class^=title_], /*Chat titlebar*/
 nav[class^=container_], /*Channellist*/
-[class^=pageWrapper] /*Discover servers page*/ {
+[class^=pageWrapper_] /*Discover servers page*/ {
   background: none !important;
 }
 /*Remove random awkward pseudoelements*/
