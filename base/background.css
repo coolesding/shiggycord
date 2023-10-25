@@ -1,7 +1,10 @@
+:root {
+  --bg-main: #1d1f21;
+  --bg-overlay: unset;
+}
 /*Change background of the main window specifically (needs !important) and fixes flashbang*/
 [class*=baseLayer] {
   background: var(--bg-main, var(--background-primary)) !important;
-  transform: scale(1) !important;
 }
 /*Add new background*/
 [class*=baseLayer]:before {
@@ -10,31 +13,34 @@
   height: 100%;
   bottom: 0px;
   position: absolute;
-  background: var(--bg-overlay, url(https://wapchan.org/.static/snow.gif));
+  background: var(--bg-overlay, url(https://github.com/coolesding/shiggycord/blob/v3/img/snow.gif?raw=true));
   pointer-events: none;
   animation: var(--bg-overlay-animation)
 }
 /*Hide default backgrounds*/
-body, #app-mount, [class^=app-], [class^=bg-], /*Entire app classes with backgrounds*/
-[class*=guilds-], /*Serverlist*/
-[class^=sidebar-], [class^=sidebar-]>[class^=container-], /*Channellist*/ [class^=panels-], 
-[class^=privateChannels-], [class^=privateChannels]>[class^=scroller-], /*Dmlist*/
-[class^=panels-]>[class^=container-], /*UserPanel*/
-[class^=chat], [class^=chatContent], [class^=chat]>[class^=title-], /*Chat*/
-[class^=chat-]>[class^=header-], [class^=chat-]>[class^=content-], [class^=content-]>[class^=chat-], [class^=prompt-], /*Channels and roles*/
-[class^=scroller-]>[class^=content-], [class^=mainTableContainer-], /*Members in servers*/
-[class^=content-]>[class^=container-], [class^=content-]>[class^=container-]>[class*=container-], /*Friendslist*/
-[class^=nowPlayingColumn-], [class^=nowPlayingColumn-]>[class^=container-], [class^=itemCard-], /*Now playing column*/
-[class^=chatLayerWrapper-]>[class^=container-], [class^=container-]>[class^=container-]>[class^=container-], /*Create thread*/
-[class^=content]>[class^=container-]+[class^=container-], [class^=membersWrap]>[class^=members-], [class^=content-]>[class^=member-] /*Memberlist*/ {
+body, #app-mount, [class^=app_], [class^=bg_], /*Entire app classes with backgrounds*/
+nav[class^=wrapper_], /*Serverlist*/
+[class^=sidebar_],  /*Channellist*/ 
+[class^=privateChannels_], [class^=privateChannels_]>[class^=scroller_], /*Dmlist*/
+[class^=panels_], [class^=panels_]>[class^=container_], /*Profile panel*/
+[class^=chat], [class^=chatContent],  /*Chat*/
+[class^=chat_]>[class^=header_], [class^=chat_]>[class^=content_], [class^=content_]>[class^=chat_], [class^=prompt_], /*Channels and roles*/
+[class^=mainTableContainer_], /*Members in servers*/
+[class^=content_]>[class^=container_], [class^=content_]>[class^=container_]>[class*=container_], /*Friendslist*/
+[class^=nowPlayingColumn_], [class^=nowPlayingColumn_]>[class^=container_], [class^=itemCard_], /*Now playing column*/
+[class^=chatLayerWrapper_]>[class^=container_], [class^=container_]>[class^=container_]>[class^=container_], /*Create thread*/
+[class^=content]>[class^=container_]+[class^=container_], [class^=membersWrap]>[class^=members_], [class^=content_]>[class^=member_], /*Memberlist*/
+[class*=noChat], [class^=callContainer], /*Call background*/
+[class^=channelChatWrapper]>div[class^=container_], [class^=container_]>[class^=uploadArea_]+section/*Voice channel chat*/ {
   background: none;
 }
 /*Hide default backgrounds (!important required)*/
-[class^=pageWrapper] /*Discover servers page*/
-{
+section[class^=title_], /*Chat titlebar*/
+nav[class^=container_], /*Channellist*/
+[class^=pageWrapper] /*Discover servers page*/ {
   background: none !important;
 }
 /*Remove random awkward pseudoelements*/
-[class^=form-]:before, [class^=children-]:after {
+[class^=form_]:before, [class^=children_]:after {
   display: none;
 }
