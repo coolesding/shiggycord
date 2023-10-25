@@ -1,11 +1,15 @@
-[class^=contents]>[class^=avatar]:first-child,
-[class^=avatar-]>[class^=wrapper], [class^=avatar-]>[class^=wrapper]>[class^=mask]>foreignObject>[class^=avatarStack]>[class^=avatar],
-[class^=userInfo]>[class^=wrapper], [class^=userInfo]>[class^=wrapper]>[class^=mask]>foreignObject>[class^=avatarStack]>[class^=avatar]{
-border-radius: calc(var(--rs-small-roundness, 100%)/2);
+[width="32"]>[class^=avatarStack_]>[class^=avatar_], /*Memberlist, Dmlist, Friendlist avatars*/ 
+[class^=contents_]>[class^=avatar_], /*Chat ring*/
+[class^=wrapper_]:is([style^="width: 32px"]) /*Small ring*/
+{
+  border-radius: calc(var(--rs-small-roundness)/2);
 }
-[class^=avatarHoverTarget]>[class^=wrapper], [class^=avatarHoverTarget]>[class^=wrapper]>[class^=mask]>foreignObject>[class^=avatarStack]>[class^=avatar]{
-border-radius: calc(var(--rs-medium-roundness, 100%)/2);
+[width="80"]>[class^=avatarStack_]>[class^=avatar_], /*Userpopout avatar*/
+[class^=clickable_] /*Userpopout ring*/ {
+  border-radius: calc(var(--rs-medium-roundness)/2);
 }
-[class^=header]>div>[class^=wrapper], [class^=header]>div>[class^=wrapper]>[class^=mask]>foreignObject>[class^=avatarStack]>[class^=avatar]{
-border-radius: calc(var(--rs-large-roundness, 100%)/2);
+[width="120"]>[class^=avatarStack_]>[class^=avatar_], /*Profile avatar*/
+[class^=wrapper_]:is([style^="width: 120px"]) /*Profile ring*/
+{
+  border-radius: calc(var(--rs-large-roundness)/2);
 }
