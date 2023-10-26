@@ -13,8 +13,8 @@ If it has an svg that is either the only child of its parent or that is the last
 :is([class^=memberInner_],[class^=header_],[class^=layout_]):has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--green-360"]))>:is([class^=avatar_],:first-child)>[class^=wrapper_],/*Memberlist, Profile, Dmlist*/
 [class^=contents_]:has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--green-360"]))>[class^=avatar_], /*Chat*/ 
 [class^=userPopoutInner_]:has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--green-360"]))>[class^=clickable_], /*Userpopout*/
-[class^=avatarWrapper_]>[class^=wrapper_]:has(>svg>svg>rect:is([fill="#23a55a"])),
-[class^=userInfo_]>[class^=wrapper_]:has(>svg>rect:is([fill="#23a55a"]))
+[class^=avatarWrapper_]>[class^=wrapper_]:has(rect:is([fill="#23a55a"])),
+[class^=userInfo_]>[class^=wrapper_]:has(rect:is([fill="#23a55a"]))
 {
   border-color: var(--rs-online-color);
 }
@@ -22,8 +22,8 @@ If it has an svg that is either the only child of its parent or that is the last
 :is([class^=memberInner_],[class^=header_],[class^=layout_]):has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--yellow-300"]))>:is([class^=avatar_],:first-child)>[class^=wrapper_],/*Memberlist, Profile, Dmlist*/
 [class^=contents_]:has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--yellow-300"]))>[class^=avatar_], /*Chat*/ 
 [class^=userPopoutInner_]:has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--yellow-300"]))>[class^=clickable_], /*Userpopout*/
-[class^=avatarWrapper_]>[class^=wrapper_]:has(>svg>svg>rect:is([fill="#f0b232"])),
-[class^=userInfo_]>[class^=wrapper_]:has(>svg>rect:is([fill="#f0b232"]))
+[class^=avatarWrapper_]>[class^=wrapper_]:has(rect:is([fill="#f0b232"])),
+[class^=userInfo_]>[class^=wrapper_]:has(rect:is([fill="#f0b232"]))
 {
   border-color: var(--rs-idle-color);
 }
@@ -31,13 +31,13 @@ If it has an svg that is either the only child of its parent or that is the last
 :is([class^=memberInner_],[class^=header_],[class^=layout_]):has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--red-400"]))>:is([class^=avatar_],:first-child)>[class^=wrapper_],/*Memberlist, Profile, Dmlist*/
 [class^=contents_]:has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--red-400"]))>[class^=avatar_], /*Chat*/ 
 [class^=userPopoutInner_]:has(svg:is(:only-child, :not([aria-label="Mobile"]):last-of-type):is([fill="var(--red-400"]))>[class^=clickable_], /*Userpopout*/
-[class^=avatarWrapper_]>[class^=wrapper_]:has(>svg>svg>rect[fill="#f23f43"]),
-[class^=userInfo_]>[class^=wrapper_]:has(>svg>rect:is([fill="#f23f43"]))
+[class^=avatarWrapper_]>[class^=wrapper_]:has(rect[fill="#f23f43"]),
+[class^=userInfo_]>[class^=wrapper_]:has(rect:is([fill="#f23f43"]))
 {
   border-color: var(--rs-dnd-color);
 }
 /*Change to bot colour if it's a bot*/
-:is([class^=memberInner_],[class^=layout_]):has([data-tag^=bot])>:is([class^=avatar_],:first-child)>[class^=wrapper_],/*Memberlist, Dmlist*/
+:is([class^=memberInner_],[class^=layout_]):has([data-tag^=bot])>:is([class^=avatar_])>[class^=wrapper_],/*Memberlist, Dmlist*/
 [class^=contents_]:has([data-tag^=bot])>[class^=avatar_], /*Chat*/ 
 [class^=userPopoutInner_]:has([data-tag^=bot])>[class^=clickable_], /*Userpopout*/ 
 [class^=userProfileModalInner_]:has([data-tag^=bot])>[class^=topSection_]>header>[class^=header_]>:first-child>[class^=wrapper_] /*Profile*/
