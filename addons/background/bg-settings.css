@@ -1,8 +1,3 @@
-:root {
-  --bg-settings-background: unset; /*Change the main background colour*/
-  --bg-settings-overlay: unset; /*Make an animated overlay like the default example*/
-  --bg-settings-overlay-animation: unset /*Advanced: Add an animation to the overlay*/;
-}
 /*Hide default backgrounds*/
 [class^=standardSidebarView_], /*Main Background*/ 
 [class^=contentRegion_], [class^=contentRegionScroller_], /*Right side*/

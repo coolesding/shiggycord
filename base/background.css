@@ -1,7 +1,3 @@
-:root {
-  --bg-main: #1d1f21;
-  --bg-overlay: unset;
-}
 /*Change background of the main window specifically (needs !important) and fixes flashbang*/
 [class*=baseLayer] {
   background: var(--bg-main, var(--background-primary)) !important;

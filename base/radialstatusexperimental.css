@@ -1,0 +1,77 @@
+/*Small*/
+:is([class^=memberInner_],[class^=contents_],[class^=layout_])>[class^=avatar_], /*Memberlist,Chat,DM list*/
+[class^=userInfo_]>[class^=wrapper_]
+{
+  box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-offline-color);
+}
+:is([class^=memberInner_],[class^=contents_],[class^=layout_]):has([fill="var(--green-360"]:is(:only-child, :not([aria-label=Mobile])))>[class^=avatar_],
+[class^=userInfo_]>[class^=wrapper_]:has([fill="#f23f43"])
+{
+  box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-online-color);
+}
+:is([class^=memberInner_],[class^=contents_],[class^=layout_]):has([fill="var(--yellow-300"]:is(:only-child, :not([aria-label=Mobile])))>[class^=avatar_],
+[class^=userInfo_]>[class^=wrapper_]:has([fill="#f0b232"])
+{
+  box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-idle-color);
+}
+:is([class^=memberInner_],[class^=contents_],[class^=layout_]):has([fill="var(--red-400"]:is(:only-child, :not([aria-label=Mobile])))>[class^=avatar_],
+[class^=userInfo_]>[class^=wrapper_]:has([fill="#23a55a"])
+{
+  box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-dnd-color);
+}
+:is([class^=memberInner_],[class^=contents_],[class^=layout_]):has([data-tag^=bot])>[class^=avatar_] {
+  box-shadow: 0 0 var(--rs-small-glow) var(--rs-small-thickness) var(--rs-bot-color);
+}
+/*Medium*/
+[class^=clickable_] {
+  box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-offline-color);
+}
+[class^=clickable_]:has(rect[fill="#23a55a"]) {
+  box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-online-color);
+}
+[class^=clickable_]:has(rect[fill="#f0b232"]) {
+  box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-idle-color);
+}
+[class^=clickable_]:has(rect[fill="#f23f43"]) {
+  box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-dnd-color);
+}
+[class^=userPopoutInner]:has([data-tag^=bot])>[class^=clickable_] {
+  box-shadow: 0 0 var(--rs-medium-glow) var(--rs-medium-thickness) var(--rs-bot-color);
+}
+/*Large*/
+[class^=header_]>:first-child>[class^=wrapper_]
+{
+  box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-offline-color);
+}
+[class^=header_]:has([fill="var(--green-360"]:is(:only-child, :not([aria-label=Mobile])))>:first-child>[class^=wrapper_] {
+  box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-online-color);
+}
+[class^=header_]:has([fill="var(--yellow-300"]:is(:only-child, :not([aria-label=Mobile])))>:first-child>[class^=wrapper_] {
+  box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-idle-color);
+}
+[class^=header_]:has([fill="var(--red-400"]:is(:only-child, :not([aria-label=Mobile])))>:first-child>[class^=wrapper_] {
+  box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-dnd-color);
+}
+[class^=userProfileModalInner_]:has([data-tag=bot])>[class^=topSection_]>header>[class^=header_]>:first-child>[class^=wrapper_] {
+  box-shadow: 0 0 var(--rs-large-glow) var(--rs-large-thickness) var(--rs-bot-color);
+}
+/*Remove unnecessary, buggy components*/
+rect[class^=pointerEvents_], /*Default status indicator*/
+[class^=wrapper_]>svg>circle, /*Default status indicator residue in popout and profile*/
+[class^=bannerSVGWrapper_]>mask, /*Background behind avatar in popout and profile*/
+[class^=clickable_]>svg, /*"View Profile" text and Background*/ 
+[class^=wrapper_]>[class^=mask]>svg, /*Moon and DND symbol*/
+[class^=wrapper_]>svg>rect /*Mobile status indicator residue in popout and profile*/{
+display: none;
+}
+/*Fix default status indicator residue in memberlist and popouts*/
+[class^=avatar_] {
+z-index: 1;
+border-radius: 50%;
+}
+/*Fix glow/abhorrent thickness cutoff in certain areas*/
+[class^=userInfo], [class^=peopleListItem_], /*Friendlist*/
+[class^=link_] /*Dm list*/
+{
+  overflow: visible;
+}
